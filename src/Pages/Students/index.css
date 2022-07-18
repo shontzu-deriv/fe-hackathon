@@ -1,0 +1,17 @@
+.main-container {
+  background-color: whitesmoke;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px black;
+}
