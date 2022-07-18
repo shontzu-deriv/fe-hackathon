@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 
 const Students = () => {
-  const [Students, setStudents] = React.useState([]);
+  const [students, setStudents] = React.useState([]);
 
   //connect to resource
-  //TODO: wrap fetch in useEffect watch empty array (meaning, triggers onMount)
+  //TODO: wrap fetch in useEffect watch empty array (meaning, triggersgit onMount)
   // useEffect(()=>{
     async function getStudents() {
       await fetch("http://hp-api.herokuapp.com/api/characters/students", { method: "GET" })
@@ -24,7 +24,7 @@ const Students = () => {
     <div>
       <button onClick={getStudents}>getStudents</button>
       <div>
-        {Students.map(function (key, index) {
+        {students.map(function (key, index) {
           return (
             <div key={index}>
               <b>name: </b>
