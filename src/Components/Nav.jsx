@@ -37,6 +37,9 @@ function Nav() {
           <Link to="/students" className="nav___item">
             STUDENTS
           </Link>
+          <Link to="/createteam" className="nav___item">
+            CREATE TEAM
+          </Link>
         </ul>
 
         <div onClick={navToggle} className={toggleIcon}>

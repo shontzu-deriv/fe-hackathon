@@ -13,7 +13,7 @@ body {
   font-size: 1.6rem;
 }
 
-.nav {
+.nav, footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -26,8 +26,9 @@ body {
   font-weight: bold;
 }
 
-.nav___item {
+.nav___item, footer {
   color: darkgray;
+  text-align:center;
   text-decoration: none;
   list-style: none;
 }

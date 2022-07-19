@@ -24,8 +24,8 @@ const Staffs = () => {
                   alert(`TEST: ${key.name}`);
                 }}
               >
-                <img src={key.image} alt="" />
-                {/* <i>{key.image||"no image"}</i> */}
+                {/* {!key.image ? <> : <>} */}
+                <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
                 <span>{key.name}</span>
                 <span>{">"}</span>
               </div>
