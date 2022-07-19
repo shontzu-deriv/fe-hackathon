@@ -9,37 +9,28 @@ const Students = () => {
   useEffect(() => {
     getStudents().then(setStudents);
   }, []);
-  
+
   return (
-    <div>
-      <div className="main-container">
-        <button onClick={getStudents}>getStudents</button>
-        <div>
-          {students.map(function (key, index) {
+    <div className="main-container">
+      <div>
+        {students
+          .filter((t) => t.image && true)
+          .map(function (key, index) {
             return (
-              <div className="card" key={index}>
-                <b>name: </b>
-                {key.name}
-                <br />
-                <b>actor: </b>
-                {key.actor}
-                <br />
-                <b>ancestry: </b>
-                {key.ancestry}
-                <br />
-                <b>dob: </b>
-                {key.dateOfBirth}
-                <br />
-                <b>eyeColour: </b>
-                {key.eyeColour}
-                <br />
-                <b>house: </b>
-                {key.house}
-                <hr />
+              <div
+                className="card"
+                key={index}
+                onClick={() => {
+                  alert(`TEST: ${key.name}`);
+                }}
+              >
+                <img src={key.image} alt="" />
+
+                <span>{key.name}</span>
+                <span>{">"}</span>
               </div>
             );
           })}
-        </div>
       </div>
     </div>
   );
