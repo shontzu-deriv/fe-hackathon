@@ -1,27 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { getStudents } from "../../fetch";
 import "./index.css";
 
 const Students = () => {
   const [students, setStudents] = React.useState([]);
 
-  //connect to resource
-  //TODO: wrap fetch in useEffect watch empty array (meaning, triggersgit onMount)
-  // useEffect(()=>{
-  async function getStudents() {
-    await fetch("http://hp-api.herokuapp.com/api/characters/students", {
-      method: "GET",
-    })
-      .then((response) => {
-        console.log(response);
-        return response.json();
-      })
-      .then((json) => {
-        console.log(json);
-        return setStudents(json);
-      });
-  }
-  // },[])
-
+  // wrap fetch in useEffect watch empty array (triggers on Mount)
+  useEffect(() => {
+    getStudents().then(setStudents);
+  }, []);
+  
   return (
     <div>
       {/* <button onClick={getStudents}>getStudents</button> */}
