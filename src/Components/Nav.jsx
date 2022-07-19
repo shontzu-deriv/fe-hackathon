@@ -35,7 +35,7 @@ function Nav() {
             STAFFS
           </Link>
           <Link to="/students" className="nav___item">
-            STUDENT
+            STUDENTS
           </Link>
         </ul>
 
@@ -45,6 +45,7 @@ function Nav() {
           <div className="line3"></div>
         </div>
       </nav>
+      <div className="goldborder"></div>
     </div>
   );
 }

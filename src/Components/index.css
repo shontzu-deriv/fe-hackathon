@@ -86,3 +86,11 @@ body {
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
 }
+
+.goldborder {
+  display: block;
+  background-color: goldenrod;
+  width: 100%;
+  z-index: 1;
+  height: 3rem;
+}
