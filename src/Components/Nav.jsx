@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Components/index.css";
-import "../Components/hogwarts-7917.png";
 
 function Nav() {
   const [active, setActive] = useState("nav___menu");
@@ -23,7 +22,10 @@ function Nav() {
     <div>
       <nav className="nav">
         <Link to="/app" className="nav___brand">
-          <img className="logo" src="../Components/hogwarts-7917.png" />
+          <img
+            className="logo"
+            src="https://www.freepnglogos.com/uploads/hogwarts-logo-png/hogwarts-logo-shadopro-deviantart-0.png"
+          />
         </Link>
         <ul className={active}>
           <Link to="/aboutus" className="nav___item">
