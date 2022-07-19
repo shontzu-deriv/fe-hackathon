@@ -21,6 +21,10 @@ body {
   background: #1a1730;
 }
 
+.nav{
+  border-bottom: 10px solid goldenrod;
+}
+
 .nav___brand {
   text-transform: uppercase;
   font-weight: bold;
@@ -52,7 +56,7 @@ body {
   cursor: pointer;
   display: none;
 }
-
+//TODO: add breakpoints for tablet mode
 @media screen and (max-width: 768px) {
   .nav___toggler {
     display: block;
