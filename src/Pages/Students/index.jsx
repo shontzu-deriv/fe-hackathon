@@ -11,10 +11,10 @@ const Students = () => {
   }, []);
 
   return (
-    <div className="main-container">
-      <div>
+    <div>
+      <div className="main-container">
         {students
-          .filter((t) => t.image && true)
+          //.filter((t) => t.image && true)
           .map(function (key, index) {
             return (
               <div

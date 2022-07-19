@@ -11,24 +11,26 @@ const Staffs = () => {
   }, []);
 
   return (
-    <div className="main-container">
-      <div>
-        {staff.filter(t=>t.image&&true).map(function (key, index) {
-          return (
-            <div
-              className="card"
-              key={index}
-              onClick={() => {
-                alert(`TEST: ${key.name}`);
-              }}
-            >
-              <img src={key.image} alt=""/>
-              {/* <i>{key.image||"no image"}</i> */}
-              <span>{key.name}</span>
-              <span>{'>'}</span>
-            </div>
-          );
-        })}
+    <div>
+      <div className="main-container">
+        {staff
+          //.filter((t) => t.image && true)
+          .map(function (key, index) {
+            return (
+              <div
+                className="card"
+                key={index}
+                onClick={() => {
+                  alert(`TEST: ${key.name}`);
+                }}
+              >
+                <img src={key.image} alt="" />
+                {/* <i>{key.image||"no image"}</i> */}
+                <span>{key.name}</span>
+                <span>{">"}</span>
+              </div>
+            );
+          })}
       </div>
     </div>
   );
