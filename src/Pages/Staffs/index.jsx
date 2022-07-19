@@ -11,10 +11,10 @@ const Staffs = () => {
   }, []);
 
   return (
-    <div className="main-container">
-      <div>
+    <div>
+      <div className="main-container">
         {staff
-          // .filter((t) => t.image && true)
+          //.filter((t) => t.image && true)
           .map(function (key, index) {
             return (
               <div

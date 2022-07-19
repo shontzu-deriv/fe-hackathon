@@ -1,0 +1,30 @@
+.main-container {
+  background-color: blue;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav-content {
+  display: block;
+  background-color: goldenrod;
+  width: 100%;
+  z-index: 1;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  height: 3rem;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
