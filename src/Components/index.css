@@ -73,7 +73,7 @@ footer {
   width: 100%;
 }
 
-//TODO: add breakpoints for tablet mode
+/* //TODO: add breakpoints for tablet mode */
 @media screen and (max-width: 768px) {
   .nav___toggler {
     display: block;
