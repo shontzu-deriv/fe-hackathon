@@ -17,9 +17,21 @@ export const HouseDetails = () => {
       <div>
         {houseDetails.map(function (key, index) {
           return (
+<<<<<<< HEAD
             <div key={index}>
               {key.name}
               <hr />
+=======
+            <div
+              className="card"
+              key={index}
+              onClick={() => {
+                alert(`TEST: ${key.name}`);
+              }}
+            >
+              <span>{key.name}</span>
+              <span>{">"}</span>
+>>>>>>> fd031b3bb81bcafe31205b88177da819184a8b43
             </div>
           );
         })}
