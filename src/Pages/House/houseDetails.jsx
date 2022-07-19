@@ -12,20 +12,20 @@ export const HouseDetails = () => {
 
   const { house } = useParams();
   return (
-  <div>
-    <h1>{house}</h1>
     <div>
-      {houseDetails.map(function (key, index) {
-        return (
-          <div key={index}>
-            {key.name}
-            <hr />
-          </div>
-        );
-      })}
+      <h1>{house}</h1>
+      <div>
+        {houseDetails.map(function (key, index) {
+          return (
+            <div key={index}>
+              {key.name}
+              <hr />
+            </div>
+          );
+        })}
+      </div>
     </div>
-    </div>
-    );
+  );
 };
 
 export default HouseDetails;
