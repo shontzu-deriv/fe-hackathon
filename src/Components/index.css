@@ -94,3 +94,8 @@ body {
   z-index: 1;
   height: 3rem;
 }
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}

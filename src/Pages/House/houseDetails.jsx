@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router";
 import { getHouse } from "../../fetch";
+import "./index.css";
 
 export const HouseDetails = () => {
   const [houseDetails, setHouseDetails] = React.useState([]);
@@ -13,8 +14,8 @@ export const HouseDetails = () => {
   const { house } = useParams();
   return (
     <div>
-      <h1>{house}</h1>
-      <div>
+      <h1 className="house-name-body">{house}</h1>
+      <div className="container">
         {houseDetails.map(function (key, index) {
           return (
             <div
