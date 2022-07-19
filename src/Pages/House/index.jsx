@@ -30,7 +30,8 @@ const House = () => {
           />
         </Link>
       </div>
-      <Outlet />
+      { !<Outlet /> ? <h1>choose a house</h1>:  <Outlet /> }
+      
     </div>
   );
 };
