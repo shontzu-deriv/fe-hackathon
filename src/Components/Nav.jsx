@@ -48,7 +48,6 @@ function Nav() {
           <div className="line3"></div>
         </div>
       </nav>
-      <div className="goldborder"></div>
     </div>
   );
 }

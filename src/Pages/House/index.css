@@ -31,10 +31,29 @@
 
 .house-name-body {
   display: flex;
-  background-color: blueviolet;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+}
+
+.gryffindor {
+  background-color: #740001;
+  color: #d3a625;
+}
+
+.slytherin {
+  background-color: #1a472a;
+  color: #aaaaaa;
+}
+
+.ravenclaw {
+  background-color: #0e1a40;
+  color: #8e8e8e;
+}
+
+.hufflepuff {
+  background-color: #dbc754;
+  color: rgb(49, 49, 49);
 }

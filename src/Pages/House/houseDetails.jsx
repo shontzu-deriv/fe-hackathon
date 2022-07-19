@@ -14,7 +14,9 @@ export const HouseDetails = () => {
   const { house } = useParams();
   return (
     <div>
-      <h1 className="house-name-body">{house}</h1>
+      <div className={house}>
+        <h1 className="house-name-body">{house}</h1>
+      </div>
       <div className="container">
         {houseDetails.map(function (key, index) {
           return (
