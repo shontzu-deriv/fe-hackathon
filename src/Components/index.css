@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.nav {
+  border-bottom: 2rem solid goldenrod;
+}
+
+.nav,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background: #1a1730;
+}
+
+.nav{
+  border-bottom: 10px solid goldenrod;
+}
+
+.nav___brand {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav___item,
+footer {
+  color: darkgray;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav___menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20rem;
+}
+
+.nav___toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: darkgray;
+  transition: 0.4s ease-in;
+}
+
+.nav___toggler {
+  cursor: pointer;
+  display: none;
+}
+
+footer{
+position:fixed;
+bottom:0;
+width:100%;
+}
+
+//TODO: add breakpoints for tablet mode
+@media screen and (max-width: 768px) {
+  .nav___toggler {
+    display: block;
+  }
+  .nav___menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    width: 50%;
+    height: 93vh;
+    background: #1a1730;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+}
+
+/* Nav Active Class */
+
+.nav___active {
+  transform: translateX(0%);
+}
+
+/*Toggler Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./Components/Nav.jsx";
+import Footer from "./Components/Footer.jsx";
+import "./fetch";
+import AboutUs from "./Pages/AboutUs";
+import House from "./Pages/House";
+import HouseDetails from "./Pages/House/houseDetails";
+import Staffs from "./Pages/Staffs";
+import Students from "./Pages/Students";
+import CreateTeam from "./Pages/CreateTeam";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <div style={{paddingBottom:"100px", background:"goldenrod"}}>
+        <BrowserRouter>
+          <Nav />
+          <Routes>
+            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="/house" element={<House />}>
+              <Route path=":house" element={<HouseDetails />} />
+            </Route>
+            <Route path="staffs" element={<Staffs />} />
+            <Route path="students" element={<Students />} />
+            <Route path="createteam" element={<CreateTeam />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
