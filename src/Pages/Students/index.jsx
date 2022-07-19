@@ -25,9 +25,7 @@ const Students = () => {
                 }}
               >
                 <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
-
                 <span>{key.name}</span>
-                <span>{">"}</span>
               </div>
             );
           })}

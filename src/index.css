@@ -13,6 +13,9 @@ code {
 }
 
 .card {
+  display:flex;
+  /* justify-content:space-evenly; */
+  /* flex-direction:column; */
   box-shadow: 0 10px 15px -3px black, o 4px 6px -4px black;
 }
 
