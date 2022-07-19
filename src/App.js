@@ -19,6 +19,8 @@ function App() {
           <Route path="Staffs" element={<Staffs />} />
           <Route path="Students" element={<Students />} />
         </Routes>
+      </div>
+      <div>
         <Footer />
       </div>
     </BrowserRouter>

@@ -1,10 +1,12 @@
 .main-container {
   background-color: whitesmoke;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
-  overflow: auto;
+  overflow-y: auto;
   height: 100vh;
 }
 

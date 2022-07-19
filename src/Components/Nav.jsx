@@ -8,16 +8,16 @@ import "./index.css";
 
 export const Nav = () => {
   return (
-    <nav>
-      <div>
-        {/* <BrowserRouter> */}
+    <div className="topnav">
+      {/* <BrowserRouter> */}
+      <a>
         <Link to="/AboutUs">About Us</Link>
-        <Link to="/House">House</Link>
-        <Link to="/Staffs">Staffs</Link>
-        <Link to="/Students">Students</Link>
-        {/* </BrowserRouter> */}
-      </div>
-    </nav>
+      </a>
+      <Link to="/House">House</Link>
+      <Link to="/Staffs">Staffs</Link>
+      <Link to="/Students">Students</Link>
+      {/* </BrowserRouter> */}
+    </div>
   );
 };
 
