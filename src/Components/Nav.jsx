@@ -35,7 +35,7 @@ function Nav() {
             STAFFS
           </Link>
           <Link to="/students" className="nav___item">
-            STUDENT
+            STUDENTS
           </Link>
           <Link to="/createteam" className="nav___item">
             CREATE TEAM

@@ -13,7 +13,12 @@ body {
   font-size: 1.6rem;
 }
 
-.nav, footer {
+.nav {
+  border-bottom: 2rem solid goldenrod;
+}
+
+.nav,
+footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -30,9 +35,10 @@ body {
   font-weight: bold;
 }
 
-.nav___item, footer {
+.nav___item,
+footer {
   color: darkgray;
-  text-align:center;
+  text-align: center;
   text-decoration: none;
   list-style: none;
 }
@@ -90,4 +96,9 @@ body {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
 }
