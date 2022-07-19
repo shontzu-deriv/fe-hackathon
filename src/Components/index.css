@@ -62,6 +62,13 @@ footer {
   cursor: pointer;
   display: none;
 }
+
+footer{
+position:fixed;
+bottom:0;
+width:100%;
+}
+
 //TODO: add breakpoints for tablet mode
 @media screen and (max-width: 768px) {
   .nav___toggler {
