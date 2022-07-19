@@ -1,42 +1,48 @@
 import React, { useEffect } from "react";
 import { getHouse } from "../../fetch";
+import {
+  Link,
+  useParams,
+  Outlet,
+} from "react-router-dom";
 
 const House = () => {
-  const [house, changeHouse] = React.useState([]);
+  const [house, setHouse] = React.useState([]);
 
   // wrap fetch in useEffect watch empty array (triggers on Mount)
-  // useEffect(() => {
-  //   getHouse()
-  // }, []);
+  useEffect(() => {
+    getHouse().then(setHouse).then(console.log(house));
+  }, []);
 
-  const setHouse = (param) => {
-    getHouse(param).then(changeHouse);
-  };
+  // const seeHouse = (param) => {
+  //   getHouse(param).then(setHouse);
+  // };
+
+  // const seeDetails = (id) => {
+  //   console.log(id);
+  // };
 
   return (
-    <div>
-      <button onClick={() => setHouse("gryffindor")}>Gryffindor</button>
-      <button onClick={() => setHouse("ravenclaw")}>Ravenclaw</button>
-      <button onClick={() => setHouse("hufflepuff")}>Hufflepuff</button>
-      <button onClick={() => setHouse("slytherin")}>Slytherin</button>
-
-      <div>
-        {house.map(function (key, index) {
-          return (
-            <div key={index}>
-              <b>name: </b>
-              {key.name}
-              <br />
-              <b>dob: </b>
-              {key.dateOfBirth}
-              <br />
-              <hr />
-            </div>
-          );
-        })}
-      </div>
+    <div className="">
+      <Link to="/house/gryffindor"> Gryffindor </Link>
+      <Link to="/house/ravenclaw"> Ravenclaw </Link>
+      <Link to="/house/hufflepuff"> Hufflepuff </Link>
+      <Link to="/house/slytherin"> Slytherin </Link>
+      <Outlet />
     </div>
   );
 };
+
+function Child() {
+  // We can use the `useParams` hook here to access
+  // the dynamic pieces of the URL.
+  let { house } = useParams();
+
+  return (
+    <div>
+      <h3>ID: {house}</h3>
+    </div>
+  );
+}
 
 export default House;
