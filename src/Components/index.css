@@ -8,7 +8,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 } */
-nav {
+/* nav {
   position: fixed;
   top: 0;
   display: inline-flex;
@@ -18,4 +18,4 @@ nav {
   background-color: aliceblue;
   padding: 0 1rem;
   box-sizing: border-box;
-}
+} */
