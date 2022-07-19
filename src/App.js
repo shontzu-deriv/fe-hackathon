@@ -12,8 +12,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex">
-      <div style={{paddingBottom:"100px", background:"goldenrod"}}>
+    <div>
+      <div>
         <BrowserRouter>
           <Nav />
           <Routes>
