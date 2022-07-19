@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Components/navbar.css";
+import "../Components/index.css";
 
 function Nav() {
   const [active, setActive] = useState("nav___menu");
@@ -19,50 +19,24 @@ function Nav() {
   };
 
   return (
-<<<<<<< HEAD
-    <div className="topnav">
-      <a>
-        <Link to="/aboutus">About Us</Link>
-      </a>
-      <a>
-        <Link to="/house">House</Link>
-      </a>
-      <a>
-        <Link to="/staff">Staffs</Link>
-      </a>
-      <a>
-        <Link to="/students">Students</Link>
-      </a>
-    </div>
-  );
-};
-=======
     <div>
       <nav className="nav">
         <Link to="/app" className="nav___brand">
           LOGO
         </Link>
         <ul className={active}>
-          <li className="nav___item">
-            <Link to="/aboutus" className="nav___link">
-              ABOUT US
-            </Link>
-          </li>
-          <li className="nav___item">
-            <Link to="/house" className="nav___link">
-              HOUSE
-            </Link>
-          </li>
-          <li className="nav___item">
-            <Link to="/staffs" className="nav___link">
-              STAFFS
-            </Link>
-          </li>
-          <li className="nav___item">
-            <Link to="/students" className="nav___link">
-              STUDENT
-            </Link>
-          </li>
+          <Link to="/aboutus" className="nav___item">
+            ABOUT US
+          </Link>
+          <Link to="/house" className="nav___item">
+            HOUSE
+          </Link>
+          <Link to="/staffs" className="nav___item">
+            STAFFS
+          </Link>
+          <Link to="/students" className="nav___item">
+            STUDENT
+          </Link>
         </ul>
 
         <div onClick={navToggle} className={toggleIcon}>
@@ -72,7 +46,7 @@ function Nav() {
         </div>
       </nav>
     </div>
-)}
->>>>>>> fd031b3bb81bcafe31205b88177da819184a8b43
+  );
+}
 
 export default Nav;
