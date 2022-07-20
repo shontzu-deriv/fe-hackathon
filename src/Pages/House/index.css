@@ -29,6 +29,11 @@
   flex-wrap: wrap;
 }
 
+img{
+width:100px;
+height:100px;
+}
+
 .house-name-body {
   display: flex;
   width: 100%;

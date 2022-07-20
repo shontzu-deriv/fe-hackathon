@@ -13,10 +13,6 @@ body {
   font-size: 1.6rem;
 }
 
-.nav {
-  border-bottom: 2rem solid goldenrod;
-}
-
 .nav,
 footer {
   display: flex;

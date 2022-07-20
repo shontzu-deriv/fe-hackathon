@@ -30,7 +30,7 @@ const CreateTeam = () => {
                 {/* {!key.image ? <> : <>} */}
                 <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
                 <div>
-                  <span>{key.name}</span>
+                  <h2>{key.name}</h2>
                   <button>add</button>
                 </div>
               </div>
@@ -51,7 +51,7 @@ const CreateTeam = () => {
                 {/* {!key.image ? <> : <>} */}
                 <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
                 <div>
-                  <span>{key.name}</span>
+                  <h2>{key.name}</h2>
                   <button>add</button>
                 </div>
               </div>

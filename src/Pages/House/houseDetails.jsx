@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router";
 import { getHouse } from "../../fetch";
-import "./index.css";
+import "../Students/index.css";
 
 export const HouseDetails = () => {
   const [houseDetails, setHouseDetails] = React.useState([]);
@@ -30,7 +30,7 @@ export const HouseDetails = () => {
               }}
             >
               <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
-              <span>{key.name}</span>
+              <h2>{key.name}</h2>
             </div>
           );
         })}

@@ -1,37 +1,55 @@
 import React, { useEffect } from "react";
 import { getStaff } from "../../fetch";
-import "./index.css";
+import "../Students/index.css";
 
 const Staffs = () => {
-  const [staff, setStaff] = React.useState([]);
+  const [staffs, setStaffs] = React.useState([]);
+  const [modal, setModal] = React.useState(undefined);
 
   // wrap fetch in useEffect watch empty array (triggers on Mount)
   useEffect(() => {
-    getStaff().then(setStaff);
+    getStaff().then(setStaffs);
   }, []);
-
+ 
   return (
     <div>
       <div className="main-container">
-        {staff
-          //.filter((t) => t.image && true)
+        {staffs
           .map(function (key, index) {
             return (
               <div
                 className="card"
                 key={index}
-                onClick={() => {
-                  alert(`TEST: ${key.name}`);
-                }}
+                onClick={()=>setModal(key)}
               >
-                {/* {!key.image ? <> : <>} */}
                 <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
-                <span>{key.name}</span>
+                <h2>{key.name}</h2>
               </div>
             );
           })}
       </div>
+
+
+      {/* {prop ? true : false}
+      {<> ? <> : <>}    */}
+      {
+      modal 
+      ? 
+      <div className="modal-bg">
+        <div className="modal">
+          <button id="modal-btn" onClick={()=>setModal(undefined)}>X</button>
+          <h1>{modal.name}, {modal.gender}</h1>
+          <hr />
+          TODO: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ea dolorum illo assumenda recusandae ullam quia cumque. Totam sint harum blanditiis alias? Temporibus consequatur quod minus magnam quas, rerum reprehenderit.
+        </div>
+      </div> 
+      : 
+      <div classname="modal-bg">
+      </div>
+      }
     </div>
+
+    
   );
 };
 
