@@ -13,8 +13,6 @@ body {
   font-size: 1.6rem;
 }
 
-<<<<<<< HEAD
-=======
 .logo {
   display: inline-block;
   vertical-align: top;
@@ -23,7 +21,6 @@ body {
   margin-right: 20px;
 }
 
->>>>>>> a4c4b88e672326a993de94709009d9c7631641de
 .nav,
 footer {
   display: flex;

@@ -1,6 +1,5 @@
 /* STUDENT AND STAFF PAGES ARE USING THE SAME CSS */
 .main-container {
-<<<<<<< HEAD
   position: relative;
   background-color: whitesmoke;
   display: flex;
@@ -76,36 +75,4 @@
   border-radius: 50%;
   background:goldenrod;
   border:5px solid darkblue;
-=======
-  background-color: whitesmoke;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
-  height: 100vh;
-}
-
-.createTeamHeader {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0;
-  background-color: goldenrod;
-  color: white;
-}
-
-.card {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 1px 2px 3px black;
-  display: flex;
-}
-
-img {
-  height: 100px;
->>>>>>> a4c4b88e672326a993de94709009d9c7631641de
 }

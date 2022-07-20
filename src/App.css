@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -25,19 +24,6 @@ code {
 button {
   padding: 5px;
   border-radius: 5px;
-=======
-.flex {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: space-between;
-}
-
-button {
-  padding: 10px;
-  border-radius: 10px;
->>>>>>> a4c4b88e672326a993de94709009d9c7631641de
   border: none;
   background: rgba(255,255,255,0.5);
   box-shadow: 1px 2px 3px gray;
