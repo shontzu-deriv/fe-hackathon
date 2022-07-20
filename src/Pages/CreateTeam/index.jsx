@@ -14,7 +14,7 @@ const CreateTeam = () => {
 
   return (
     <div>
-      <h1>Create your dream team</h1>
+      <h1 className="createTeamHeader">Create your dream team</h1>
       <div className="main-container">
         {staff
           .filter((t) => t.image && true)
@@ -28,7 +28,14 @@ const CreateTeam = () => {
                 }}
               >
                 {/* {!key.image ? <> : <>} */}
-                <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
+                <img
+                  src={
+                    key.image !== ""
+                      ? key.image
+                      : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"
+                  }
+                  alt=""
+                />
                 <div>
                   <h2>{key.name}</h2>
                   <button>add</button>
@@ -37,7 +44,7 @@ const CreateTeam = () => {
             );
           })}
 
-          {students
+        {students
           .filter((t) => t.image && true)
           .map(function (key, index) {
             return (
@@ -49,7 +56,14 @@ const CreateTeam = () => {
                 }}
               >
                 {/* {!key.image ? <> : <>} */}
-                <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
+                <img
+                  src={
+                    key.image !== ""
+                      ? key.image
+                      : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"
+                  }
+                  alt=""
+                />
                 <div>
                   <h2>{key.name}</h2>
                   <button>add</button>

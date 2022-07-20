@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div>
+<<<<<<< HEAD
       <BrowserRouter>
         <Nav />
         <Routes>
@@ -26,6 +27,25 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
+=======
+      <div>
+        <BrowserRouter>
+          <Nav />
+          <Routes>
+            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="/house" element={<House />}>
+              <Route path=":house" element={<HouseDetails />} />
+            </Route>
+            <Route path="staffs" element={<Staffs />} />
+            <Route path="students" element={<Students />} />
+            <Route path="createteam" element={<CreateTeam />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <div>
+        <Footer />
+      </div>
+>>>>>>> a4c4b88e672326a993de94709009d9c7631641de
     </div>
   );
 }
