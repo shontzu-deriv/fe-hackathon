@@ -13,8 +13,12 @@ body {
   font-size: 1.6rem;
 }
 
-.nav {
-  border-bottom: 2rem solid goldenrod;
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
 }
 
 .nav,
@@ -26,7 +30,7 @@ footer {
   background: #1a1730;
 }
 
-.nav{
+.nav {
   border-bottom: 10px solid goldenrod;
 }
 
@@ -63,13 +67,13 @@ footer {
   display: none;
 }
 
-footer{
-position:fixed;
-bottom:0;
-width:100%;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-//TODO: add breakpoints for tablet mode
+/* //TODO: add breakpoints for tablet mode */
 @media screen and (max-width: 768px) {
   .nav___toggler {
     display: block;

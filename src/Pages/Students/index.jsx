@@ -10,7 +10,7 @@ const Students = () => {
   useEffect(() => {
     getStudents().then(setStudents);
   }, []);
-
+ 
   return (
     <div>
       <div className="main-container">
@@ -20,12 +20,10 @@ const Students = () => {
               <div
                 className="card"
                 key={index}
+                onClick={()=>setModal(key)}
               >
                 <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
-                <div>
-                  <h2>{key.name}</h2>
-                  <button onClick={()=>setModal(key)}>details</button>
-                </div>
+                <h2>{key.name}</h2>
               </div>
             );
           })}

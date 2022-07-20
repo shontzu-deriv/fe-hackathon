@@ -13,7 +13,6 @@
 
 .subnav-content a {
   float: left;
-  color: black;
   padding: 14px 16px;
   text-decoration: none;
   align-content: center;
@@ -27,6 +26,11 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+}
+
+img{
+width:100px;
+height:100px;
 }
 
 .house-name-body {
