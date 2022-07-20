@@ -40,8 +40,8 @@ function Nav() {
           <Link to="/students" className="nav___item">
             STUDENTS
           </Link>
-          <Link to="/forum" className="nav___item">
-            FORUM
+          <Link to="/profile" className="nav___item">
+            PROFILE
           </Link>
         </ul>
 

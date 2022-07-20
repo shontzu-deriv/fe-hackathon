@@ -6,10 +6,11 @@ import House from "./Pages/House";
 import HouseDetails from "./Pages/House/houseDetails";
 import Staffs from "./Pages/Staffs";
 import Students from "./Pages/Students";
-import Forum from "./Pages/Forum";
-import Login from "./Pages/Forum/login.jsx"
-import Register from "./Pages/Forum/register.jsx"
+import Profile from "./Pages/Profile";
+import Login from "./Pages/Profile/login.jsx"
+import Register from "./Pages/Profile/register.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css"
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           </Route>
           <Route path="staffs" element={<Staffs />} />
           <Route path="students" element={<Students />} />
-          <Route path="/forum" element={<Forum />}>
+          <Route path="/profile" element={<Profile />}>
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
           </Route>
