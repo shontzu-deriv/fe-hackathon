@@ -50,10 +50,9 @@ const Forum = () => {
         </div>
       ) : (
         <div className="form">
-          <h1>You are not logged in</h1>
           <nav>
-            <Link to="/profile/login">Log In</Link>
-            <Link to="/profile/register">Register</Link>
+            <Link to="/profile/login"><div className="link">Log In</div></Link>
+            <Link to="/profile/register"><div className="link">Register</div></Link>
           </nav>
           {user ? <></> : <Outlet />}
           <hr />
