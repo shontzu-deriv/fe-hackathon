@@ -1,4 +1,3 @@
-import "./App.css";
 import Nav from "./Components/Nav.jsx";
 import Footer from "./Components/Footer.jsx";
 import "./fetch";
@@ -9,13 +8,18 @@ import Staffs from "./Pages/Staffs";
 import Students from "./Pages/Students";
 import CreateTeam from "./Pages/CreateTeam";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Header from "./Components/Header.jsx";
+import Home from "./Pages/Home.jsx";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Nav />
+
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/app" element={<Home />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="/house" element={<House />}>
             <Route path=":house" element={<HouseDetails />} />
@@ -24,8 +28,8 @@ function App() {
           <Route path="students" element={<Students />} />
           <Route path="createteam" element={<CreateTeam />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }
