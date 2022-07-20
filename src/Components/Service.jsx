@@ -21,7 +21,7 @@
 // export default Service;
 import React from "react";
 import "./services.css";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 
 const Service = () => {
   return (
