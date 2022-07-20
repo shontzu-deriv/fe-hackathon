@@ -22,7 +22,10 @@ function Nav() {
     <div>
       <nav className="nav">
         <Link to="/app" className="nav___brand">
-          LOGO
+          <img
+            className="logo"
+            src="https://www.freepnglogos.com/uploads/hogwarts-logo-png/hogwarts-logo-shadopro-deviantart-0.png"
+          />
         </Link>
         <ul className={active}>
           <Link to="/aboutus" className="nav___item">

@@ -1,22 +1,35 @@
-.main-container {
-  background-color: blue;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
 .flex {
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  align-items:space-between;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
 }
 
-button{
-  padding:10px;
-  border-radius:10px;
+button {
+  padding: 10px;
+  border-radius: 10px;
   border: none;
   box-shadow: 1px 2px 3px gray;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a1730;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgb(182, 138, 26);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: goldenrod;
 }

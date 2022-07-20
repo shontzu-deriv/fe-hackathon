@@ -6,32 +6,19 @@ const House = () => {
     <div>
       <div className="subnav-content">
         <Link to="/house/gryffindor">
-          <img
-            src="https://toppng.com/uploads/preview/howgarts-gryffindor-harrypotter-tumblr-griffindor-harry-potter-logo-11562874877dkmpqfudaz.png"
-            alt=""
-          />
+          <img src="https://i.ibb.co/2vrphnd/Gryffindor.png" alt="Griffindor" />
         </Link>
         <Link to="/house/ravenclaw">
-          <img
-            src="https://w7.pngwing.com/pngs/563/589/png-transparent-ravenclaw-logo-ravenclaw-house-fictional-universe-of-harry-potter-common-room-hogwarts-gryffindor-harry-potter-ravenclaw-logo-helga-hufflepuff-slytherin-house.png"
-            alt=""
-          />
+          <img src="https://i.ibb.co/hsQwRbQ/Ravenclaw.png" alt="Ravenclaw" />
         </Link>
         <Link to="/house/hufflepuff">
-          <img
-            src="https://toppng.com/uploads/preview/escudo-gryffindor-png-hufflepuff-house-11563000685lwbmbe5zf8.png"
-            alt=""
-          />
+          <img src="https://i.ibb.co/Ybz47gs/Hufflepuff.png" alt="Hufflepuff" />
         </Link>
         <Link to="/house/slytherin">
-          <img
-            src="https://toppng.com/uploads/preview/harry-potter-slytherin-logo-11549535063t3nuppcxfd.png"
-            alt=""
-          />
+          <img src="https://i.ibb.co/BzmD2tc/Slytherin.png" alt="Slytherin" />
         </Link>
       </div>
-      { !<Outlet /> ? <h1>choose a house</h1>:  <Outlet /> }
-      
+      {!(<Outlet />) ? <h1>choose a house</h1> : <Outlet />}
     </div>
   );
 };
