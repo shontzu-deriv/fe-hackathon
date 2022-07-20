@@ -6,7 +6,6 @@ import House from "./Pages/House";
 import HouseDetails from "./Pages/House/houseDetails";
 import Staffs from "./Pages/Staffs";
 import Students from "./Pages/Students";
-import CreateTeam from "./Pages/CreateTeam";
 import Forum from "./Pages/Forum";
 import Login from "./Pages/Forum/login.jsx"
 import Register from "./Pages/Forum/register.jsx"
@@ -27,7 +26,6 @@ function App() {
           </Route>
           <Route path="staffs" element={<Staffs />} />
           <Route path="students" element={<Students />} />
-          <Route path="createteam" element={<CreateTeam />} />
           <Route path="/forum" element={<Forum />}>
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />

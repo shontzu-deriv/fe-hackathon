@@ -40,9 +40,6 @@ function Nav() {
           <Link to="/students" className="nav___item">
             STUDENTS
           </Link>
-          <Link to="/createteam" className="nav___item">
-            CREATE TEAM
-          </Link>{" "}
           <Link to="/forum" className="nav___item">
             FORUM
           </Link>
