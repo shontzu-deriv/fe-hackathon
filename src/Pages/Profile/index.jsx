@@ -52,8 +52,8 @@ const Forum = () => {
         <div className="form">
           <h1>You are not logged in</h1>
           <nav>
-            <Link to="/forum/login">Log In</Link>
-            <Link to="/forum/register">Register</Link>
+            <Link to="/profile/login">Log In</Link>
+            <Link to="/profile/register">Register</Link>
           </nav>
           {user ? <></> : <Outlet />}
           <hr />
