@@ -1,6 +1,7 @@
 import React from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase-config";
+import './index.css'
 
 const Register = () => {
   const [registerEmail, setRegisterEmail] = React.useState("");
@@ -20,7 +21,7 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className="form">
       <h1>Register</h1>
       <input
         type="text"

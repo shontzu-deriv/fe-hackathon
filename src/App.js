@@ -1,6 +1,6 @@
 import Nav from "./Components/Nav.jsx";
 import Footer from "./Components/Footer.jsx";
-import "./fetch";
+import Home from "./Pages/Home.jsx";
 import AboutUs from "./Pages/AboutUs";
 import House from "./Pages/House";
 import HouseDetails from "./Pages/House/houseDetails";
@@ -11,7 +11,6 @@ import Forum from "./Pages/Forum";
 import Login from "./Pages/Forum/login.jsx"
 import Register from "./Pages/Forum/register.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home.jsx";
 
 function App() {
   return (
