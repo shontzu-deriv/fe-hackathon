@@ -17,7 +17,7 @@ code {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom:500px;
+  margin-bottom: 500px;
 }
 
 button,
@@ -34,6 +34,7 @@ input {
   padding: 10px;
   margin: 5px;
   border: none;
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: inset 1px 1px 3px black;
   border-radius: 15px;
 }
