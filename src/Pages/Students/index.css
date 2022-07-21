@@ -1,12 +1,14 @@
 /* STUDENT AND STAFF PAGES ARE USING THE SAME CSS */
-.main-container {
+.student-staffs-main-container {
   position: relative;
-  background-color: whitesmoke;
+  background-color: #ddd;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
+  padding: 10px;
+  padding-bottom: 100px;
 }
 
 .card {
@@ -21,21 +23,21 @@
   cursor: pointer;
 }
 
-.card > img{
+.card > img {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: stretch;
 }
 .card > h2 {
-  position:absolute;
-  color:white;
-  bottom:0;
-  display:flex;
-  justify-content:space-between;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-container::-webkit-scrollbar {
@@ -58,21 +60,42 @@
 }
 
 .modal {
+  display: grid;
+  grid-template-columns: auto auto;
   position: relative;
   background: white;
   width: 50%;
   height: 50%;
   border-radius: 5%;
-  padding: 20px;
+  padding: 40px;
   box-shadow: 3px 3px 20px black;
+}
+
+.modal-body {
+  width: 100%;
+  padding: 10px;
+}
+
+.modal-body > p {
+  font-size: larger;
+  line-height: 130%;
+  margin-top: 10px;
+}
+
+.modal-body > img {
+  height: 20vw;
+  width: 100%;
 }
 
 #modal-btn {
   position: absolute;
   right: -10px;
   top: -10px;
+  font-size: larger;
+  font-weight: bolder;
   transform: rotate(12deg);
   border-radius: 50%;
-  background:goldenrod;
-  border:5px solid darkblue;
+  background: goldenrod;
+  border: 5px solid #1a1730;
+  color: #1a1730;
 }

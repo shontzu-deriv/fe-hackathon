@@ -21,16 +21,17 @@
 .container {
   background-color: #ddd;
   padding: 10px;
-  height: 100%;
+  padding-bottom: 100px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
 
-img{
-width:100px;
-height:100px;
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .house-name-body {
@@ -42,22 +43,22 @@ height:100px;
   padding: 1rem 0;
 }
 
-.gryffindor {
+.Gryffindor {
   background-color: #740001;
   color: #d3a625;
 }
 
-.slytherin {
+.Slytherin {
   background-color: #1a472a;
   color: #aaaaaa;
 }
 
-.ravenclaw {
+.Ravenclaw {
   background-color: #0e1a40;
   color: #8e8e8e;
 }
 
-.hufflepuff {
+.Hufflepuff {
   background-color: #dbc754;
   color: rgb(49, 49, 49);
 }
