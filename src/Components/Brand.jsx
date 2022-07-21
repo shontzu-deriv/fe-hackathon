@@ -16,7 +16,7 @@ const Brand = () => {
         </div>
       </div>
       <div className="layoutposition">
-        <h1  data-aos="fade-left">The Houses That Are Available In This App</h1>
+        <h1  data-aos="fade-up">The Houses That Are Available In This App</h1>
       </div>
     </div>
   );
