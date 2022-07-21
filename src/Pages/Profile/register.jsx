@@ -1,7 +1,7 @@
 import React from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase-config";
-import './index.css'
+import "./index.css";
 
 const Register = () => {
   const [registerEmail, setRegisterEmail] = React.useState("");
@@ -37,6 +37,17 @@ const Register = () => {
           setRegisterPassword(e.target.value);
         }}
       />
+      <select name="house">
+        {/* HOW TO??? */}
+        {/* onChange={setUserHouse(house)} */}
+        {["gryffindor", "hufflepuff", "ravenclaw", "slytherin"].map(
+          (house, index) => (
+            <option value={house} key={house + index}>
+              {house}
+            </option>
+          )
+        )}
+      </select>
       <button onClick={register}>Register</button>
     </div>
   );

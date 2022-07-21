@@ -19,13 +19,13 @@ body {
   width: 50px;
   height: 50px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
-.nav,
-footer {
+.nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 8vh;
   background: #1a1730;
 }
@@ -39,19 +39,19 @@ footer {
   font-weight: bold;
 }
 
-.nav___item,
-footer {
+.nav___item {
   color: darkgray;
   text-align: center;
   text-decoration: none;
   list-style: none;
+  margin-left: 2rem;
 }
 
 .nav___menu {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 20rem;
+  justify-content: flex-end;
+  /* gap: 20rem; */
 }
 
 .nav___toggler div {
@@ -71,6 +71,10 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background: #1a1730;
 }
 
 /* //TODO: add breakpoints for tablet mode */
@@ -107,9 +111,4 @@ footer {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
-}
-
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
 }

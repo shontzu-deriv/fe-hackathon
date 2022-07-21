@@ -39,20 +39,6 @@ const Login = () => {
           setLoginPassword(e.target.value);
         }}
       />
-      <select name="house" >
-        {/* HOW TO??? */}
-        {/* onChange={setUserHouse(house)} */}
-        {[
-          "gryffindor",
-          "hufflepuff",
-          "ravenclaw",
-          "slytherin"
-        ].map((house, index) => (
-          <option value={house} key={house + index}>
-            {house}
-          </option>
-        ))}
-      </select>
       <button onClick={login}>Login</button>
     </div>
   );

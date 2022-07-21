@@ -21,45 +21,44 @@
 // export default Service;
 import React from "react";
 import "./services.css";
-// import "bootstrap/dist/css/bootstrap.css";
 
 const Service = () => {
   return (
-    <div className="container">
+    <section className="section-b">
       <div className="about">
         <div className="spec ">
-          <h3>About</h3>
+          <h3>About Us</h3>
           <div className="ser-t">
             <b></b>
-            <span>
-              <i></i>
-            </span>
+            <i></i>
             <b className="line"></b>
           </div>
         </div>
-
-        <div className="col-md-4 about-right">
-          <img className="img-responsive" src="../src/Images/hp5.jpeg" alt="" />
-        </div>
-        <div className="col-md-4 about-left">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            laoreet sem sit amet dolor luctus pellentesque. Pellentesque
-            eleifend tellus at interdum elementum. Nam egestas molestie elit.
-            Vivamus sed accumsan quam, a mollis magna. Nam aliquet eros eget
-            sapien consequat tincidunt at vel nibh. Duis ut turpis mi. Duis nec
-            scelerisque urna, sit amet varius arcu. Aliquam aliquet sapien quis
-            mauris semper suscipit. Maecenas pharetra dapibus posuere. Praesent
-            odio sem.
-          </p>
-        </div>
-        <div className="col-md-4 about-right">
-          <img className="img-responsive" src="../src/Images/hp5.jpeg" alt="" />
-        </div>
-
-        <div className="clearfix"> </div>
       </div>
-    </div>
+      <br />
+      <br />
+      <div className="overlay" data-aos="slide-up">
+        <div className="section-b-inner py-5">
+          <h2 className="text-5 mt-1">Harry Potter Almanac</h2>
+
+          <p className="mt-1">
+            Your character has finally arrived! What kind of witch or wizard
+            will you be? A heroic Gryffindor? A cunning Slytherin? A clever
+            Ravenclaw? A loyal Hufflepuff? YOU decide! With countless choices,
+            you will be able to carve out your own unique path in Harry Potter:
+            Hogwarts Mystery. This is YOUR Hogwarts journey. Whether you are
+            mastering powerful character with Dumbledore, brewing potions with
+            Snape, discovering favourite character at Hogwarts, forging
+            alliances with new friends, or duelling your rivals, there is always
+            something new to explore!
+          </p>
+          <br />
+          <br />
+          <br />
+          <div class="button">JOIN US NOW</div>
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -1,7 +1,6 @@
 /* STUDENT AND STAFF PAGES ARE USING THE SAME CSS */
 .student-staffs-main-container {
   position: relative;
-  background-color: #ddd;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -36,8 +35,7 @@
   position: absolute;
   color: white;
   bottom: 0;
-  display: flex;
-  justify-content: space-between;
+  left: 10px;
 }
 
 .main-container::-webkit-scrollbar {
@@ -76,6 +74,20 @@
   padding: 10px;
 }
 
+.modal-body-desc {
+  font-size: larger;
+  line-height: 130%;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.modal-body-desc > p {
+  overflow-y: auto;
+  height: 300px;
+  width: 100%;
+  padding-right: 8px;
+}
+
 .modal-body > p {
   font-size: larger;
   line-height: 130%;
@@ -83,6 +95,7 @@
 }
 
 .modal-body > img {
+  border-radius: 5px;
   height: 20vw;
   width: 100%;
 }

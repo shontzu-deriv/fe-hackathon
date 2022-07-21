@@ -25,7 +25,7 @@ const Students = () => {
                 }
                 alt=""
               />
-              <h2>{key.name}</h2>
+              <h2 data-aos="fade-up">{key.name}</h2>
             </div>
           );
         })}
