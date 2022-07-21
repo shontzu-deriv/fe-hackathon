@@ -1,0 +1,23 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import {getAuth} from "firebase/auth";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBS2Y_ldCxH6yliPAH8_lbc2Cjpq3hosZE",
+  authDomain: "besquare-hogwarts.firebaseapp.com",
+  projectId: "besquare-hogwarts",
+  storageBucket: "besquare-hogwarts.appspot.com",
+  messagingSenderId: "539209426871",
+  appId: "1:539209426871:web:bea2d4e395c01e03fe2a32",
+  measurementId: "G-L2JHVR4174"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+export const auth = getAuth(app);

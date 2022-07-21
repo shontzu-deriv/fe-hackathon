@@ -1,0 +1,96 @@
+/* .serviceslandingpage {
+  background: url(./Images/hp9.jpg) no-repeat center/cover;
+  height: 600px;
+  filter: none;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+} */
+.about {
+  padding: 6em 0;
+}
+
+.spec {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.spec h3 {
+  font-size: 3em;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+.ser-t {
+  text-align: center;
+  margin: 0 auto;
+  width: 20%;
+  position: relative;
+}
+
+.ser-t b {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #039445;
+  margin-bottom: 3px;
+}
+
+.ser-t span {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: -7px;
+  left: 42%;
+}
+
+.ser-t span i {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid #1a1730;
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+  -o-transform: rotate(45deg) translate3d(0, 0, 0);
+  transform: rotate(45deg) translate3d(0, 0, 0);
+  margin-left: 0.7em;
+}
+
+.ser-t b.line {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ser-t b {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #0e0eda;
+  margin-bottom: 3px;
+}
+
+.about-left p {
+  font-size: 1em;
+  color: #999;
+  line-height: 2em;
+  padding: 2em 0;
+}
+ul.resp-tabs-list,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+p,
+label {
+  margin: 0;
+}
+
+.img-responsive {
+  width: 100px;
+  height: 100px;
+}

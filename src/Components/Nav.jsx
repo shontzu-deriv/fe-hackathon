@@ -23,7 +23,7 @@ function Nav() {
       <nav className="nav">
         <Link to="/app" className="nav___brand">
           <img
-            className="logo"
+            className="logo" alt=""
             src="https://www.freepnglogos.com/uploads/hogwarts-logo-png/hogwarts-logo-shadopro-deviantart-0.png"
           />
         </Link>
@@ -40,8 +40,8 @@ function Nav() {
           <Link to="/students" className="nav___item">
             STUDENTS
           </Link>
-          <Link to="/createteam" className="nav___item">
-            CREATE TEAM
+          <Link to="/profile" className="nav___item">
+            PROFILE
           </Link>
         </ul>
 

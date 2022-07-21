@@ -13,20 +13,30 @@ code {
 }
 
 .main-container {
-  background-color: blue;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom:500px;
+  margin-bottom: 500px;
 }
 
-button {
-  padding: 5px;
-  border-radius: 5px;
+button,
+select {
+  padding: 10px;
+  margin: 5px;
   border: none;
-  background: rgba(255,255,255,0.5);
-  box-shadow: 1px 2px 3px gray;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 15px;
+  background:goldenrod;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 1px 1px 3px black;
+  border-radius: 15px;
 }
 
 /* width */

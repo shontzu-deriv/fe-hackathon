@@ -1,0 +1,56 @@
+.banner > img {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+}
+
+.profile > div {
+  padding: 3rem;
+  margin: 3rem;
+  width: 45%;
+  border: 5px solid goldenrod;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px black;
+  overflow: hidden;
+}
+
+nav{
+  display:flex;
+}
+
+.link {
+  margin:10px;
+  padding:10px;
+  /* border: 1px solid black; */
+  border-radius:10px;
+  box-shadow:1px 2px 3px black;
+}
+
+@media screen and (max-width: 800px) {
+  .profile {
+    display: block;
+  }
+
+  .profile > div {
+    width: 100%;
+    margin:0;
+    margin-top:10px;
+  }
+}
