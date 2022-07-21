@@ -21,8 +21,7 @@ body {
   margin-right: 20px;
 }
 
-.nav,
-footer {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +70,10 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  color:white;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background: #1a1730;
 }
 
 /* //TODO: add breakpoints for tablet mode */
@@ -108,9 +110,4 @@ footer {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
-}
-
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
 }
