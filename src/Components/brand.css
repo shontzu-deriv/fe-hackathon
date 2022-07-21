@@ -9,8 +9,8 @@
   border-bottom-width: 60px;
   border-radius: 36px;
   margin-top: 20px;
-  margin-right: 350px;
-  margin-left: 150px;
+  /* margin-right: 350px;
+  margin-left: 150px; */
 }
 
 /* The horizontal line on the top of the device */
@@ -53,12 +53,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 .layoutposition {
   display: inline-block;
-  margin-right: 400px;
+  /* margin-right: 400px; */
   text-align: center;
 }
 

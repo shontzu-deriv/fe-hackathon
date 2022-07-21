@@ -76,7 +76,7 @@
   background-image: url("../Images/hp2.jpeg");
   background-size: cover;
   height: 650px;
-  filter: none;
+  /* filter: none; */
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
   -ms-filter: blur(0px);
@@ -86,10 +86,9 @@
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   height: 650px;
-  text-align: center;
   color: #fff;
 }
 
@@ -100,8 +99,6 @@
   white-space: nowrap;
   color: #0e3742;
   text-transform: uppercase;
-  width: 100px;
-  text-align: center;
   line-height: 0.7em;
   outline: none;
   animation: animate 5s linear infinite;
@@ -155,8 +152,7 @@
   white-space: nowrap;
   color: #0e3742;
   text-transform: uppercase;
-  width: 100px;
-  text-align: center;
+  /* text-align: center; */
   line-height: 0.7em;
   outline: none;
   animation: animate 5s linear infinite;
@@ -187,12 +183,4 @@
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
       0 0 80px #03bcf4, 0 0 160px #03bcf4;
   }
-}
-
-/* hr .line1 {
-  border: 1px solid darkblue;
-} */
-
-p {
-  padding-left: 500px;
 }

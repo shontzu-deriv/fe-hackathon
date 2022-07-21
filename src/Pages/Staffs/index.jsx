@@ -23,7 +23,7 @@ const Staffs = () => {
                 onClick={()=>setModal(key)}
               >
                 <img src={key.image !== "" ? key.image : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"} alt=""/>
-                <h2>{key.name}</h2>
+                <h2 data-aos="fade-up">{key.name}</h2>
               </div>
             );
           })}

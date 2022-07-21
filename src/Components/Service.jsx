@@ -37,7 +37,7 @@ const Service = () => {
       </div>
       <br />
       <br />
-      <div className="overlay">
+      <div className="overlay" data-aos="slide-up">
         <div className="section-b-inner py-5">
           <h2 className="text-5 mt-1">Harry Potter Almanac</h2>
 

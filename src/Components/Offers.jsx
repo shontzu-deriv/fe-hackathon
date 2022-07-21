@@ -5,7 +5,7 @@ const Offers = () => {
   return (
     <section id="timeline">
       <article>
-        <div className="inner">
+        <div className="inner" data-aos="fade-left">
           <span className="date">
             <span className="day">
               30<sup>th</sup>
@@ -22,7 +22,7 @@ const Offers = () => {
         </div>
       </article>
       <article>
-        <div className="inner">
+        <div className="inner" data-aos="fade-right">
           <span className="date">
             <span className="day">
               26<sup>th</sup>
@@ -39,7 +39,7 @@ const Offers = () => {
         </div>
       </article>
       <article>
-        <div class="inner">
+        <div class="inner" data-aos="fade-left">
           <span className="date">
             <span className="day">
               24<sup>th</sup>
@@ -56,7 +56,7 @@ const Offers = () => {
         </div>
       </article>
       <article>
-        <div className="inner">
+        <div className="inner" data-aos="fade-right">
           <span className="date">
             <span className="day">
               20<sup>th</sup>
@@ -73,7 +73,7 @@ const Offers = () => {
         </div>
       </article>
       <article>
-        <div className="inner">
+        <div className="inner" data-aos="fade-left" >
           <span className="date">
             <span className="day">
               18<sup>th</sup>

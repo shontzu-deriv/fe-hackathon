@@ -10,12 +10,13 @@ const Brand = () => {
           <iframe
             src={video}
             alt="video"
+            title="Harry Potter Video"
             style={{ width: "100%", border: "none", height: "100%" }}
           />
         </div>
       </div>
       <div className="layoutposition">
-        <h1>The Houses That Are Available In This App</h1>
+        <h1  data-aos="fade-up">The Houses That Are Available In This App</h1>
       </div>
     </div>
   );
