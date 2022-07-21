@@ -92,7 +92,7 @@ nav ul li a:hover {
   }
   .nav___menu {
     position: fixed;
-    top: 7vh;
+    top: 0;
     right: 0;
     width: 50%;
     height: 100%;
@@ -100,7 +100,7 @@ nav ul li a:hover {
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
-    z-index:1000;
+    z-index:999;
   }
 }
 
