@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import "./index.css";
-const AboutUs = () => {
+import Shontzula from "../Images/shontzu.jpeg";
+const AboutUsIndex = () => {
   return (
     <section className="main_wrapper_faq">
       <div className="container">
@@ -7,12 +9,13 @@ const AboutUs = () => {
           <div className="box">
             <div className="content">
               <h2>01</h2>
-              <img className="people" src="" />
-              <h3>Card One</h3>
+              <img className="people" src={Shontzula} alt="image" />
+              <h3>Shontzu</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
                 totam velit? Iure nemo labore inventore?
               </p>
+              <Link to="">Programmer</Link>
             </div>
           </div>
         </div>
@@ -22,11 +25,12 @@ const AboutUs = () => {
             <div className="content">
               <h2>02</h2>
               <img className="people" src="" />
-              <h3>Card Two</h3>
+              <h3>Derrick</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
                 totam velit? Iure nemo labore inventore?
               </p>
+              <Link to="">Designer</Link>
             </div>
           </div>
         </div>
@@ -36,11 +40,12 @@ const AboutUs = () => {
             <div className="content">
               <h2>03</h2>
               <img className="people" src="" />
-              <h3>Card Three</h3>
+              <h3>Izzaty</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
                 totam velit? Iure nemo labore inventore?
               </p>
+              <Link to="">Programmer</Link>
             </div>
           </div>
         </div>
@@ -49,4 +54,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsIndex;
