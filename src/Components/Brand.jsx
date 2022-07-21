@@ -10,6 +10,7 @@ const Brand = () => {
           <iframe
             src={video}
             alt="video"
+            title="Harry Potter Video"
             style={{ width: "100%", border: "none", height: "100%" }}
           />
         </div>
