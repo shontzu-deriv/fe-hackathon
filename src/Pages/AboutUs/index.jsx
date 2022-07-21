@@ -20,8 +20,8 @@ const AboutUsIndex = () => {
               <img className="people" src={shontzula} alt="shontzuimage" />
               <h3>Shontzu</h3>
               <p>
-                A busy housewife with 5 years of experience hacking the
-                husband's laptop.
+                Busy housewife with 5 years of experience hacking the husband's
+                laptop.
               </p>
               <Link to="">Programmer</Link>
             </div>
@@ -46,11 +46,7 @@ const AboutUsIndex = () => {
               <h2>03</h2>
               <img className="people" src={izzatyla} alt="izzatyimage" />
               <h3>Izzaty</h3>
-              <p>
-                2 years experience in unethical hacking with the Talibans and
-                participated in hacking the white house system during trump
-                election.
-              </p>
+              <p>2 years experience in hacking with the Talibans terrorist.</p>
               <Link to="">Programmer</Link>
             </div>
           </div>
