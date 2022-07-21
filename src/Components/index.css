@@ -25,7 +25,7 @@ body {
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 8vh;
   background: #1a1730;
 }
@@ -39,19 +39,19 @@ footer {
   font-weight: bold;
 }
 
-.nav___item,
-footer {
+.nav___item {
   color: darkgray;
   text-align: center;
   text-decoration: none;
   list-style: none;
+  margin-left: 2rem;
 }
 
 .nav___menu {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 20rem;
+  justify-content: flex-end;
+  /* gap: 20rem; */
 }
 
 .nav___toggler div {
@@ -71,6 +71,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  color:white;
 }
 
 /* //TODO: add breakpoints for tablet mode */
