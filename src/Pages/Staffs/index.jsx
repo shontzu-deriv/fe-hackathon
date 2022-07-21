@@ -13,6 +13,9 @@ const Staffs = () => {
 
   return (
     <div>
+      <div className="subheader-color">
+        <h1 className="subheader">Staffs</h1>
+      </div>
       <div className="student-staffs-main-container">
         {staffs.map(function (key, index) {
           return (
@@ -39,14 +42,31 @@ const Staffs = () => {
             <button id="modal-btn" onClick={() => setModal(undefined)}>
               X
             </button>
-            <h1>
-              {modal.name}, {modal.gender}
-            </h1>
-            <hr />
-            TODO: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-            ea dolorum illo assumenda recusandae ullam quia cumque. Totam sint
-            harum blanditiis alias? Temporibus consequatur quod minus magnam
-            quas, rerum reprehenderit.
+            <div className="modal-body">
+              <img
+                src={
+                  modal.image !== ""
+                    ? modal.image
+                    : "https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png"
+                }
+                alt=""
+              />
+            </div>
+            <div className="modal-body">
+              <h1>{modal.name}</h1>
+              <p>
+                <b>Gender: </b>
+                {modal.gender}
+              </p>
+              <p>
+                <b>Species: </b>
+                {modal.species}
+              </p>
+              <hr />
+              <div className="modal-body-desc">
+                <p>{modal.description}</p>
+              </div>
+            </div>
           </div>
         </div>
       ) : (

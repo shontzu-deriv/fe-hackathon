@@ -46,7 +46,7 @@ function Nav() {
           </li>
           <li className="nav___item">
             <Link to="/students" className="nav___link">
-              STUDENT
+              STUDENTS
             </Link>
           </li>
           <li className="nav___item">
