@@ -26,7 +26,7 @@ function Nav() {
         </Link>
         <ul className={active}>
           <li className="nav___item">
-            <Link to="/app" className="nav___link">
+            <Link to="/aboutus" className="nav___link">
               ABOUT US
             </Link>
           </li>
