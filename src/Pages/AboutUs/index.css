@@ -4,7 +4,8 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 40px 0;
+  margin-left: 350px;
+  margin-top: 100px;
 }
 
 .container .card {
@@ -105,4 +106,38 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #fff;
   color: #000;
+}
+
+.bodyy {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+h1 {
+  color: #484848;
+  font-size: 120px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+h1 span {
+  transition: 0.5s linear;
+}
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+h1:hover span:nth-child(1):after {
+  content: "";
+}
+h1:hover span:nth-child(2) {
+  margin-left: 3px;
+}
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
