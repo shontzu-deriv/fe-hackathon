@@ -67,7 +67,7 @@ nav ul li a:hover {
 .nav___menu {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* gap: 20rem; */
 }
 
@@ -93,11 +93,12 @@ nav ul li a:hover {
     top: 7vh;
     right: 0;
     width: 50%;
-    height: 93vh;
+    height: 100%;
     background: #1a1730;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+    z-index:1000;
   }
 }
 

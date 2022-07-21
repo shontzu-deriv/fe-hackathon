@@ -49,7 +49,7 @@ body {
 .nav___menu {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   /* gap: 20rem; */
 }
 
@@ -86,11 +86,12 @@ footer {
     top: 7vh;
     right: 0;
     width: 50%;
-    height: 93vh;
+    height: 100%;
     background: #1a1730;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+    z-index: 1000;
   }
 }
 
