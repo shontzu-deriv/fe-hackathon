@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Components/index.css";
+import "../Components/navbar.css";
 
 function Nav() {
   const [active, setActive] = useState("nav___menu");
@@ -22,27 +22,34 @@ function Nav() {
     <div>
       <nav className="nav">
         <Link to="/app" className="nav___brand">
-          <img
-            className="logo" alt=""
-            src="https://www.freepnglogos.com/uploads/hogwarts-logo-png/hogwarts-logo-shadopro-deviantart-0.png"
-          />
+          LOGO
         </Link>
         <ul className={active}>
-          <Link to="/aboutus" className="nav___item">
-            ABOUT US
-          </Link>
-          <Link to="/house" className="nav___item">
-            HOUSE
-          </Link>
-          <Link to="/staffs" className="nav___item">
-            STAFFS
-          </Link>
-          <Link to="/students" className="nav___item">
-            STUDENTS
-          </Link>
-          <Link to="/profile" className="nav___item">
-            PROFILE
-          </Link>
+          <li className="nav___item">
+            <Link to="/aboutus" className="nav___link">
+              ABOUT US
+            </Link>
+          </li>
+          <li className="nav___item">
+            <Link to="/house" className="nav___link">
+              HOUSE
+            </Link>
+          </li>
+          <li className="nav___item">
+            <Link to="/staffs" className="nav___link">
+              STAFFS
+            </Link>
+          </li>
+          <li className="nav___item">
+            <Link to="/students" className="nav___link">
+              STUDENT
+            </Link>
+          </li>
+          <li className="nav___item">
+            <Link to="/profile" className="nav___link">
+              PROFILE
+            </Link>
+          </li>
         </ul>
 
         <div onClick={navToggle} className={toggleIcon}>
