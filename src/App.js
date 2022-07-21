@@ -7,10 +7,10 @@ import HouseDetails from "./Pages/House/houseDetails";
 import Staffs from "./Pages/Staffs";
 import Students from "./Pages/Students";
 import Profile from "./Pages/Profile";
-import Login from "./Pages/Profile/login.jsx"
-import Register from "./Pages/Profile/register.jsx"
+import Login from "./Pages/Profile/login.jsx";
+import Register from "./Pages/Profile/register.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css"
+import "./App.css";
 
 function App() {
   return (
