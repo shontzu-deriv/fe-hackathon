@@ -1,24 +1,68 @@
 import React from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase-config";
+import { auth, firestore } from "../../firebase-config";
+import { doc, setDoc, getFirestore } from "firebase/firestore";
 import "./index.css";
 
 const Register = () => {
+  const houseRef = React.useRef();
+  const yearRef = React.useRef();
   const [registerEmail, setRegisterEmail] = React.useState("");
   const [registerPassword, setRegisterPassword] = React.useState("");
+  const [subjectList, setSubjectList] = React.useState([]);
+  const coreClasses = [
+    "Astronomy",
+    "Charms",
+    "Defense Against the Dark Arts",
+    "Herbology",
+    "History of Magic",
+    "Potions",
+    "Transfiguration",
+  ];
+  const year3 = [
+    "Arithmacy",
+    "Care of Magical Creatures",
+    "Divination",
+    "Muggle Studies",
+    "Study of Ancient Runes",
+  ];
+  const year6 = ["Advanced Arithmacy", "Alchemy", "Apparition"];
 
   const register = async () => {
+    // if(!houseRef.current)throw "FML"
     try {
+      //catch the value
+      const house=houseRef.current.value;
+      const year=yearRef.current.value;
+      //create the user
       const user = await createUserWithEmailAndPassword(
         auth,
         registerEmail,
         registerPassword
       );
+      //after it done lets create the stuffs
+      if(year===1){
+        setSubjectList(coreClasses)
+      } else if (year===3) {
+        setSubjectList(year3)
+      } else {
+        setSubjectList(year6)
+      }
+
+      const docRef=doc(firestore,"Users",user.user.uid);
+        await setDoc(docRef,{
+          userEmail: registerEmail,
+          house:house,
+          year:year,
+          subjectList:subjectList
+        });
+        alert("Welcome " + registerEmail )
       console.log(user);
     } catch (err) {
       alert(err.message);
     }
   };
+
 
   return (
     <div className="form">
@@ -37,18 +81,27 @@ const Register = () => {
           setRegisterPassword(e.target.value);
         }}
       />
-      <select name="house">
-        {/* HOW TO??? */}
-        {/* onChange={setUserHouse(house)} */}
-        {["gryffindor", "hufflepuff", "ravenclaw", "slytherin"].map(
-          (house, index) => (
-            <option value={house} key={house + index}>
-              {house}
+      <div style={{ display: "flex" }}>
+        <select name="house" ref={houseRef}>
+          {["gryffindor", "hufflepuff", "ravenclaw", "slytherin"].map(
+            (house, index) => (
+              <option value={house} key={house + index}>
+                {house}
+              </option>
+            )
+          )}
+        </select>
+        <select name="year" ref={yearRef}>
+          {[1,3,6].map((year, index) => (
+            <option value={year} key={year + index}>
+              Year {year}
             </option>
-          )
-        )}
-      </select>
-      <button onClick={register}>Register</button>
+          ))}
+        </select>
+      </div>
+      <button onClick={register} style={{ width: "100%" }}>
+        Register
+      </button>
     </div>
   );
 };
