@@ -115,7 +115,7 @@ label {
   justify-content: center;
   text-align: center;
   margin: auto;
-  max-width: 860px;
+  /* max-width: 860px; */
   padding: 5rem 0;
 }
 
