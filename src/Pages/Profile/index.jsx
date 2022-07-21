@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../../firebase-config";
+import { auth, firestore } from "../../firebase-config";
+import { doc, docRef, getDoc } from "firebase/firestore";
+
 import "./index.css";
 
 const Forum = () => {
-  const [user, setUser] = React.useState("");
+  const [user, setUser] = React.useState(undefined);
+  const [house, setHouse] = React.useState("");
+  const [email, setEmail] = React.useState("");
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
@@ -14,6 +18,21 @@ const Forum = () => {
   const logout = async () => {
     await signOut(auth);
   };
+
+  useEffect(() => {
+    if (!user) return;
+    // console.log(user);
+    const docRef = doc(firestore, "Users", user.uid);
+
+    getDoc(docRef).then((user) => {
+      // console.log(user)
+      // console.log(user.data());
+      // console.log(user.data().house);
+      // console.log(user.data().userEmail);
+      setHouse(user.data().house);
+      console.log("house: " + house);
+    });
+  }, [user, house]);
 
   return (
     <div>
@@ -30,13 +49,13 @@ const Forum = () => {
               <p>
                 <b>{user.email}</b>
               </p>
-              <p>House: Gryffindor </p>
+              <p>House: {house}</p>
               <p>Age: 22 </p>
               <p>Joined: dd/mm/yyyy</p>
             </div>
 
             <div>
-              <h1>This is your Hogwarts Profile</h1>
+              <h2>This is your Hogwarts Profile</h2>
               <hr />
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
@@ -51,8 +70,12 @@ const Forum = () => {
       ) : (
         <div className="form">
           <nav>
-            <Link to="/profile/login"><div className="link">Log In</div></Link>
-            <Link to="/profile/register"><div className="link">Register</div></Link>
+            <Link to="/profile/login">
+              <div className="link">Log In</div>
+            </Link>
+            <Link to="/profile/register">
+              <div className="link">Register</div>
+            </Link>
           </nav>
           {user ? <></> : <Outlet />}
           <hr />
