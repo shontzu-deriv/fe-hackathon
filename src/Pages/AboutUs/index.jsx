@@ -17,11 +17,11 @@ const AboutUsIndex = () => {
           <div className="box">
             <div className="content">
               <h2>01</h2>
-              <img className="people" src={shontzula} alt="image" />
+              <img className="people" src={shontzula} alt="shontzuimage" />
               <h3>Shontzu</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-                totam velit? Iure nemo labore inventore?
+                A busy housewife with 5 years of experience hacking the
+                husband's laptop.
               </p>
               <Link to="">Programmer</Link>
             </div>
@@ -32,12 +32,9 @@ const AboutUsIndex = () => {
           <div className="box">
             <div className="content">
               <h2>02</h2>
-              <img className="people" src={derrickla} alt="image" />
+              <img className="people" src={derrickla} alt="derrickimage" />
               <h3>Derrick</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-                totam velit? Iure nemo labore inventore?
-              </p>
+              <p>Still in progress in experiencing the experience.</p>
               <Link to="">Designer</Link>
             </div>
           </div>
@@ -47,11 +44,12 @@ const AboutUsIndex = () => {
           <div className="box">
             <div className="content">
               <h2>03</h2>
-              <img className="people" src={izzatyla} alt="image" />
+              <img className="people" src={izzatyla} alt="izzatyimage" />
               <h3>Izzaty</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-                totam velit? Iure nemo labore inventore?
+                2 years experience in unethical hacking with the Talibans and
+                participated in hacking the white house system during trump
+                election.
               </p>
               <Link to="">Programmer</Link>
             </div>
