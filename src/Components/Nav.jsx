@@ -45,6 +45,11 @@ function Nav() {
               STUDENT
             </Link>
           </li>
+          <li className="nav___item">
+            <Link to="/profile" className="nav___link">
+              PROFILE
+            </Link>
+          </li>
         </ul>
 
         <div onClick={navToggle} className={toggleIcon}>
@@ -54,6 +59,7 @@ function Nav() {
         </div>
       </nav>
     </div>
-)}
+  );
+}
 
 export default Nav;

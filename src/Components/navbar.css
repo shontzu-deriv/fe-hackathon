@@ -54,7 +54,7 @@ nav ul li a:hover {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 8vh;
   background: #1a1730;
 }
@@ -68,7 +68,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 20rem;
+  /* gap: 20rem; */
 }
 
 .nav___toggler div {
