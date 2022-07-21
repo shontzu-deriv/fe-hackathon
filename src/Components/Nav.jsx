@@ -22,7 +22,11 @@ function Nav() {
     <div>
       <nav className="nav">
         <Link to="/app" className="nav___brand">
-          LOGO
+          <img
+            className="logo"
+            alt=""
+            src="https://www.freepnglogos.com/uploads/hogwarts-logo-png/hogwarts-logo-shadopro-deviantart-0.png"
+          />
         </Link>
         <ul className={active}>
           <li className="nav___item">
@@ -42,7 +46,7 @@ function Nav() {
           </li>
           <li className="nav___item">
             <Link to="/students" className="nav___link">
-              STUDENT
+              STUDENTS
             </Link>
           </li>
           <li className="nav___item">

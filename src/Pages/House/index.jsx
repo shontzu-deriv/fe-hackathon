@@ -5,19 +5,20 @@ const House = () => {
   return (
     <div>
       <div className="subnav-content">
-        <Link to="/house/gryffindor">
+        <Link to="/house/Gryffindor">
           <img src="https://i.ibb.co/2vrphnd/Gryffindor.png" alt="Griffindor" />
         </Link>
-        <Link to="/house/ravenclaw">
+        <Link to="/house/Ravenclaw">
           <img src="https://i.ibb.co/hsQwRbQ/Ravenclaw.png" alt="Ravenclaw" />
         </Link>
-        <Link to="/house/hufflepuff">
+        <Link to="/house/Hufflepuff">
           <img src="https://i.ibb.co/Ybz47gs/Hufflepuff.png" alt="Hufflepuff" />
         </Link>
-        <Link to="/house/slytherin">
-          <img src="https://i.ibb.co/BzmD2tc/Slytherin.png" alt="Slytherin" />
+        <Link to="/house/Slytherin">
+          <img src="https://i.ibb.co/s5Pd3sb/Slytherin-1.png" alt="Slytherin" />
         </Link>
       </div>
+      <body></body>
       {!(<Outlet />) ? <h1>choose a house</h1> : <Outlet />}
     </div>
   );
