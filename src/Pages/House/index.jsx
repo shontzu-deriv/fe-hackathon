@@ -15,9 +15,10 @@ const House = () => {
           <img src="https://i.ibb.co/Ybz47gs/Hufflepuff.png" alt="Hufflepuff" />
         </Link>
         <Link to="/house/Slytherin">
-          <img src="https://i.ibb.co/BzmD2tc/Slytherin.png" alt="Slytherin" />
+          <img src="https://i.ibb.co/s5Pd3sb/Slytherin-1.png" alt="Slytherin" />
         </Link>
       </div>
+      <body></body>
       {!(<Outlet />) ? <h1>choose a house</h1> : <Outlet />}
     </div>
   );
