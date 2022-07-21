@@ -18,7 +18,7 @@ const Login = () => {
       );
       console.log(user);
     } catch (err) {
-      console.log(err.message);
+      alert(err.message);
     }
   };
 
