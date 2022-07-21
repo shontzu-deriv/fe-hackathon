@@ -1,15 +1,16 @@
 import Nav from "./Components/Nav.jsx";
 import Footer from "./Components/Footer.jsx";
-import "./fetch";
+import Home from "./Pages/Home.jsx";
 import AboutUs from "./Pages/AboutUs";
 import House from "./Pages/House";
 import HouseDetails from "./Pages/House/houseDetails";
 import Staffs from "./Pages/Staffs";
 import Students from "./Pages/Students";
-import CreateTeam from "./Pages/CreateTeam";
+import Profile from "./Pages/Profile";
+import Login from "./Pages/Profile/login.jsx"
+import Register from "./Pages/Profile/register.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Header from "./Components/Header.jsx";
-import Home from "./Pages/Home.jsx";
+import "./App.css"
 
 function App() {
   return (
@@ -26,7 +27,10 @@ function App() {
           </Route>
           <Route path="staffs" element={<Staffs />} />
           <Route path="students" element={<Students />} />
-          <Route path="createteam" element={<CreateTeam />} />
+          <Route path="/profile" element={<Profile />}>
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Route>
         </Routes>
         <Footer />
       </BrowserRouter>
