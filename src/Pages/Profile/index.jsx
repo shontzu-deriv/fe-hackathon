@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../../firebase-config";
+import { auth, firestore } from "../../firebase-config";
+import { doc, docRef, getDoc } from "firebase/firestore";
+
 import "./index.css";
 
 const Forum = () => {
-  const [user, setUser] = React.useState("");
+  const [user, setUser] = React.useState(undefined);
+  const [house, setHouse] = React.useState("");
+  const [email, setEmail] = React.useState("");
+
+  var year = 3;
+
+  const year1 = [
+    "Astronomy",
+    "Charms",
+    "Defense Against the Dark Arts",
+    "Herbology",
+    "History of Magic",
+    "Potions",
+    "Transfiguration",
+  ]
+  const year3=[
+    "Arithmacy",
+    "Care of Magical Creatures",
+    "Divination",
+    "Muggle Studies",
+    "Study of Ancient Runes",
+  ]
+  const year6 = ["Advanced Arithmacy", "Alchemy", "Apparition"]
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
@@ -14,6 +38,21 @@ const Forum = () => {
   const logout = async () => {
     await signOut(auth);
   };
+
+  // useEffect(() => {
+  //   if (!user) return;
+  //   // console.log(user);
+  //   const docRef = doc(firestore, "Users", user.uid);
+
+  //   getDoc(docRef).then((user) => {
+  //     // console.log(user)
+  //     // console.log(user.data());
+  //     // console.log(user.data().house);
+  //     // console.log(user.data().userEmail);
+  //     setHouse(user.data().house);
+  //     console.log("house: " + house);
+  //   });
+  // }, [user, house]);
 
   return (
     <div>
@@ -27,32 +66,63 @@ const Forum = () => {
           </div>
           <div className="profile">
             <div>
-              <p>
+              <h2>This is your Hogwarts Profile</h2>
+              <hr />
+              <li>
                 <b>{user.email}</b>
-              </p>
-              <p>House: Gryffindor </p>
-              <p>Age: 22 </p>
-              <p>Joined: dd/mm/yyyy</p>
+              </li>
+              {/* <li>House: {house}</li> */}
+              <li>Current year: Year {year} </li>
+              <button onClick={logout}>logout</button>
             </div>
 
             <div>
-              <h1>This is your Hogwarts Profile</h1>
+              <h2>Subject List</h2>
               <hr />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                mollitia vero aut tenetur quasi eius voluptatem perferendis
-                magni reprehenderit, quaerat ad ullam officiis? Sequi, sed
-                debitis eius saepe odio nesciunt.
-              </p>
-              <button onClick={logout}>logout</button>
+              {year === 1 && (
+                <li>
+                  {year1.map((subject, index) => (
+                    <option value={house} key={subject + index}>
+                      {subject}
+                    </option>
+                  ))}
+                </li>
+              )}
+              {year === 3 && (
+                <li>
+                  {year3.map((subject, index) => (
+                    <option value={house} key={subject + index}>
+                      {subject}
+                    </option>
+                  ))}
+                </li>
+              )}
+              {year === 6 && (
+                <li>
+                  {year6.map(
+                    (subject, index) => (
+                      <option value={house} key={subject + index}>
+                        {subject}
+                      </option>
+                    )
+                  )}
+                </li>
+              )}
             </div>
           </div>
+          <hr />
+            <h1 className="profile">YOU ARE IN GRYFFINDOR</h1>
+            <p style={{paddingLeft:"100px",paddingRight:"100px",paddingBottom:"100px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim id pariatur, molestias dolor, iste tempore dicta eveniet nam asperiores quidem, saepe voluptates cumque accusantium odio atque dolore. Natus ratione eum reprehenderit maiores numquam deleniti dicta dignissimos. Sit animi perspiciatis delectus doloremque voluptate modi, numquam adipisci consectetur rem nemo labore mollitia, ipsa est, iure molestiae asperiores voluptas? Ea temporibus cupiditate earum autem perspiciatis. Necessitatibus modi unde, eum quia qui voluptatibus itaque nihil obcaecati, hic, ad quam alias possimus officiis animi ab assumenda veritatis soluta. Fugit cum atque quod dolorum animi minus accusamus voluptate? Dolorem veritatis nobis officia aliquid quae odit.</p>
         </div>
       ) : (
         <div className="form">
           <nav>
-            <Link to="/profile/login"><div className="link">Log In</div></Link>
-            <Link to="/profile/register"><div className="link">Register</div></Link>
+            <Link to="/profile/login">
+              <div className="link">Log In</div>
+            </Link>
+            <Link to="/profile/register">
+              <div className="link">Register</div>
+            </Link>
           </nav>
           {user ? <></> : <Outlet />}
           <hr />
