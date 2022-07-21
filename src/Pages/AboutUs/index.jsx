@@ -7,6 +7,7 @@ const AboutUs = () => {
           <div className="box">
             <div className="content">
               <h2>01</h2>
+              <img className="people" src="" />
               <h3>Card One</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
@@ -20,6 +21,7 @@ const AboutUs = () => {
           <div className="box">
             <div className="content">
               <h2>02</h2>
+              <img className="people" src="" />
               <h3>Card Two</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
@@ -33,6 +35,7 @@ const AboutUs = () => {
           <div className="box">
             <div className="content">
               <h2>03</h2>
+              <img className="people" src="" />
               <h3>Card Three</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
