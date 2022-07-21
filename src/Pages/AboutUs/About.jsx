@@ -1,4 +1,5 @@
 import React from "react";
+import Animatd from "./animation.jsx";
 import "./index.jsx";
 import AboutUsIndex from "./index.jsx";
 import Review from "./section2.jsx";
@@ -8,6 +9,9 @@ const About = () => {
     <section>
       <AboutUsIndex />
       <Review />
+
+      <br></br>
+      <Animatd />
     </section>
   );
 };

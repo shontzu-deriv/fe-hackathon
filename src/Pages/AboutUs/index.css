@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin-left: 350px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .container .card {
@@ -115,7 +115,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 h1 {
   color: #484848;

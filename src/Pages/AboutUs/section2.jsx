@@ -2,151 +2,60 @@ import "./secstyle.css";
 
 const Review = () => {
   return (
-    <section id="testimonials">
-      {/* heading */}
-      <div className="testimonial-heading">
-        <span>Comments</span>
-        <h4>Clients Says</h4>
+    <section className="service__faq">
+      <div className="column">
+        <div className="row justify-content-center">
+          <div className="service__faq__wrapper">
+            <span className="service__faq__wrapper__circle">?</span>
+            <h3 className="service__faq__wrapper__title">
+              FAQ: Harry Potter Almanac
+            </h3>
+          </div>
+        </div>
       </div>
-      {/* <!--testimonials-box-container------> */}
-      <div className="testimonial-box-container">
-        {/* <!--BOX-1--------------> */}
-        <div className="testimonial-box">
-          {/* <!--top-------------------------> */}
-          <div className="box-top">
-            {/* <!--profile-----> */}
-            <div className="profile">
-              {/* <!--img----> */}
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
-              </div>
-              {/* <!--name-and-username--> */}
-              <div className="name-user">
-                <strong>Liam mendes</strong>
-                <span>@liammendes</span>
-              </div>
-            </div>
-            {/* <!--reviews------> */}
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-            </div>
-          </div>
-          {/* <!--Comments----------------------------------------> */}
-          <div className="client-comment">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, quaerat quis? Provident temporibus architecto
-              asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-              tenetur voluptates incidunt blanditiis sed atque cumque.
+
+      <div className="column">
+        <div className="row">
+          <div className="col-md-4 faq__wrapper__inner">
+            <h4 className="service__faq__q">
+              <span className="faq__first-letter">Q:&nbsp;</span>What should we
+              do if we are thinking to uninstall the app?
+            </h4>
+            <p className="service__faq__a">
+              <span className="faq__first-letter">A:&nbsp;</span>If you're
+              serious about admiring the greatness of Harry Potter then you
+              definitely shouldnt uninstall this app because this app gives you
+              the spirit to learn about harry potter characters more.
             </p>
           </div>
-        </div>
-        {/* <!--BOX-2--------------> */}
-        <div className="testimonial-box">
-          {/* <!--top-------------------------> */}
-          <div className="box-top">
-            {/* <!--profile-----> */}
-            <div className="profile">
-              {/* <!--img----> */}
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
-              </div>
-              {/* <!--name-and-username--> */}
-              <div className="name-user">
-                <strong>Noah Wood</strong>
-                <span>@noahwood</span>
-              </div>
-            </div>
-            {/* <!--reviews------> */}
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-            </div>
-          </div>
-          {/* <!--Comments----------------------------------------> */}
-          <div className="client-comment">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, quaerat quis? Provident temporibus architecto
-              asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-              tenetur voluptates incidunt blanditiis sed atque cumque.
+
+          <div className="col-md-4 faq__wrapper__inner">
+            <h4 className="service__faq__q">
+              <span className="faq__first-letter">Q:&nbsp;</span>When is the
+              best time to use this app?
+            </h4>
+            <p className="service__faq__a">
+              <span className="faq__first-letter">A:&nbsp;</span>You basically
+              can use this app whenever you want and theres always a time for
+              you to choose whether to spend your free time on this app to
+              explore more about Harry Potter and the houses.
             </p>
           </div>
-        </div>
-        {/* <!--BOX-3--------------> */}
-        <div className="testimonial-box">
-          {/* <!--top-------------------------> */}
-          <div className="box-top">
-            {/* <!--profile-----> */}
-            <div className="profile">
-              {/* <!--img----> */}
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
-              </div>
-              {/* <!--name-and-username--> */}
-              <div className="name-user">
-                <strong>Oliver Queen</strong>
-                <span>@oliverqueen</span>
-              </div>
-            </div>
-            {/* <!--reviews------> */}
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-            </div>
-          </div>
-          {/* <!--Comments----------------------------------------> */}
-          <div className="client-comment">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, quaerat quis? Provident temporibus architecto
-              asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-              tenetur voluptates incidunt blanditiis sed atque cumque.
-            </p>
-          </div>
-        </div>
-        {/* <!--BOX-4--------------> */}
-        <div className="testimonial-box">
-          {/* <!--top-------------------------> */}
-          <div className="box-top">
-            {/* <!--profile-----> */}
-            <div className="profile">
-              {/* <!--img----> */}
-              <div className="profile-img">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
-              </div>
-              {/* <!--name-and-username--> */}
-              <div className="name-user">
-                <strong>Barry Allen</strong>
-                <span>@barryallen</span>
-              </div>
-            </div>
-            {/* <!--reviews------> */}
-            <div className="reviews">
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-              <i className="far fa-star"></i>
-            </div>
-          </div>
-          {/* <!--Comments----------------------------------------> */}
-          <div className="client-comment">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, quaerat quis? Provident temporibus architecto
-              asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-              tenetur voluptates incidunt blanditiis sed atque cumque.
+
+          <div className="col-md-4 faq__wrapper__inner">
+            <h4 className="service__faq__q">
+              <span className="faq__first-letter">Q:&nbsp;</span>How long will
+              it take to build my desire team?
+            </h4>
+            <p className="service__faq__a">
+              <span className="faq__first-letter">
+                <br />
+                <br />
+                A:&nbsp;
+              </span>
+              It depends on the circumstances. How fast or slow you use this
+              app, this app is not slow, who knows it will end up slow one day
+              but it functions well so far.
             </p>
           </div>
         </div>

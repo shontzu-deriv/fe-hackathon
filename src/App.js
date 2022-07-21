@@ -1,7 +1,6 @@
 import Nav from "./Components/Nav.jsx";
 import Footer from "./Components/Footer.jsx";
 import Home from "./Pages/Home.jsx";
-import AboutUs from "./Pages/AboutUs";
 import House from "./Pages/House";
 import HouseDetails from "./Pages/House/houseDetails";
 import Staffs from "./Pages/Staffs";
@@ -11,6 +10,7 @@ import Login from "./Pages/Profile/login.jsx";
 import Register from "./Pages/Profile/register.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import About from "./Pages/AboutUs/About.jsx";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/app" element={<Home />} />
-          <Route path="aboutus" element={<AboutUs />} />
+          <Route path="aboutus" element={<About />} />
           <Route path="/house" element={<House />}>
             <Route path=":house" element={<HouseDetails />} />
           </Route>

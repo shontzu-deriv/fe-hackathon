@@ -1,114 +1,54 @@
-#testimonials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-.testimonial-heading {
-  letter-spacing: 1px;
-  margin: 30px 0px;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.service__faq {
+  margin: 50px 20px 100px;
+  border: 4px solid #c1af61;
+  padding: 0 40px;
 }
 
-.testimonial-heading span {
-  font-size: 1.3rem;
-  color: #252525;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.service__faq__wrapper {
+  text-align: center;
 }
-.testimonial-box-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+
+.faq__wrapper__inner {
+  padding-bottom: 20px;
 }
-.testimonial-box {
-  width: 500px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 15px;
-  cursor: pointer;
-}
-.profile-img {
+
+.service__faq__wrapper__circle {
+  color: #c1af61;
+  font-size: 30px;
+  font-family: MinionPro-Bold;
+  background: #f2f1ec;
   width: 50px;
   height: 50px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid;
   border-radius: 50%;
-  overflow: hidden;
-  margin-right: 10px;
-}
-.profile-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.profile {
-  display: flex;
-  align-items: center;
-}
-.name-user {
-  display: flex;
-  flex-direction: column;
-}
-.name-user strong {
-  color: #3d3d3d;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-}
-.name-user span {
-  color: #979797;
-  font-size: 0.8rem;
-}
-.reviews {
-  color: #f9d71c;
-}
-.box-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.client-comment p {
-  font-size: 0.9rem;
-  color: #4b4b4b;
-}
-.testimonial-box:hover {
-  transform: translateY(-10px);
-  transition: all ease 0.3s;
+  line-height: 50px;
+  position: relative;
+  top: -25px;
 }
 
-@media (max-width: 1060px) {
-  .testimonial-box {
-    width: 45%;
-    padding: 10px;
-  }
+.service__faq__wrapper__title {
+  font-family: MinionPro-Bold;
+  color: #c1af61;
+  font-size: 36px;
+  margin: 0px 0px 30px 0px;
+  padding: 0 15px;
+  text-align: center;
+  position: relative;
 }
-@media (max-width: 790px) {
-  .testimonial-box {
-    width: 100%;
-  }
-  .testimonial-heading h1 {
-    font-size: 1.4rem;
-  }
+
+.service__faq__q {
+  font-family: "proxima_nova_ltlight";
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
-@media (max-width: 340px) {
-  .box-top {
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-  .reviews {
-    margin-top: 10px;
-  }
+
+.faq__first-letter {
+  color: #c1af61;
+  font-weight: 600;
 }
-::selection {
-  color: #ffffff;
-  background-color: #252525;
+
+.col-md-4 {
+  display: flex;
 }
