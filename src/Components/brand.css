@@ -1,0 +1,79 @@
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 706px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  margin-top: 20px;
+  margin-right: 350px;
+  margin-left: 150px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 328px;
+  height: 587px;
+  background: white;
+}
+
+.containerA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+.layoutposition {
+  display: inline-block;
+  margin-right: 400px;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #83eeff;
+  color: white;
+  letter-spacing: -0.05em;
+  font-family: "Anton", Arial, sans-serif;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 80px;
+  transition: all 0.25s ease-out;
+}
+h1:hover {
+  text-shadow: -16px 6px 15px #83eeff;
+}
