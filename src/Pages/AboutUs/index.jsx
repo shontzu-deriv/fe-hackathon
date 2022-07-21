@@ -1,3 +1,4 @@
+import "../Pages/AboutUs/index.css";
 const AboutUs = () => {
   return (
     <section className="main_wrapper_faq">
