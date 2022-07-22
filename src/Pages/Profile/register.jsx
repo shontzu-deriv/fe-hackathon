@@ -1,7 +1,7 @@
 import React from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, firestore } from "../../firebase-config";
-import { doc, setDoc, getFirestore } from "firebase/firestore";
+import { doc, setDoc,getDoc, getFirestore } from "firebase/firestore";
 import "./index.css";
 
 const Register = () => {
@@ -9,7 +9,7 @@ const Register = () => {
   const yearRef = React.useRef();
   const [registerEmail, setRegisterEmail] = React.useState("");
   const [registerPassword, setRegisterPassword] = React.useState("");
-  const [subjectList, setSubjectList] = React.useState([]);
+  let [subjectList, setSubjectList] = React.useState([]);
   const coreClasses = [
     "Astronomy",
     "Charms",
@@ -41,21 +41,24 @@ const Register = () => {
         registerPassword
       );
       //after it done lets create the stuffs
-      if(year===1){
-        setSubjectList(coreClasses)
-      } else if (year===3) {
-        setSubjectList(year3)
+      if(year==="1"){
+        subjectList=coreClasses;
+      } else if (year==="3") {
+        subjectList=year3;
       } else {
-        setSubjectList(year6)
+        subjectList=year6;
       }
+      //post the changes
+      setSubjectList(subjectList)
 
       const docRef=doc(firestore,"Users",user.user.uid);
-        await setDoc(docRef,{
+        let g=await setDoc(docRef,{
           userEmail: registerEmail,
           house:house,
           year:year,
           subjectList:subjectList
         });
+        console.log(subjectList)
         alert("Welcome " + registerEmail )
       console.log(user);
     } catch (err) {

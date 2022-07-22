@@ -9,27 +9,8 @@ import "./index.css";
 const Forum = () => {
   const [user, setUser] = React.useState(undefined);
   const [house, setHouse] = React.useState("");
-  const [email, setEmail] = React.useState("");
-
-  var year = 3;
-
-  const year1 = [
-    "Astronomy",
-    "Charms",
-    "Defense Against the Dark Arts",
-    "Herbology",
-    "History of Magic",
-    "Potions",
-    "Transfiguration",
-  ]
-  const year3=[
-    "Arithmacy",
-    "Care of Magical Creatures",
-    "Divination",
-    "Muggle Studies",
-    "Study of Ancient Runes",
-  ]
-  const year6 = ["Advanced Arithmacy", "Alchemy", "Apparition"]
+  const [subject, setSubject] = React.useState([]);
+  const [year, setYear] = React.useState();
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
@@ -39,20 +20,24 @@ const Forum = () => {
     await signOut(auth);
   };
 
-  // useEffect(() => {
-  //   if (!user) return;
-  //   // console.log(user);
-  //   const docRef = doc(firestore, "Users", user.uid);
+  useEffect(() => {
+    if (!user) return;
+    // console.log(user);
+    const docRef = doc(firestore, "Users", user.uid);
 
-  //   getDoc(docRef).then((user) => {
-  //     // console.log(user)
-  //     // console.log(user.data());
-  //     // console.log(user.data().house);
-  //     // console.log(user.data().userEmail);
-  //     setHouse(user.data().house);
-  //     console.log("house: " + house);
-  //   });
-  // }, [user, house]);
+    getDoc(docRef).then((user) => {
+      // console.log(user)
+      console.log(user.data());
+      // console.log(user.data().house);
+      // console.log(user.data().userEmail);
+      setHouse(user.data().house);
+      setSubject(user.data().subjectList)
+      setYear(user.data().year)
+      console.log("house: " + house);
+      console.log("subjects: " + subject);
+      console.log("year: " + year);
+    });
+  }, [user, house]);
 
   return (
     <div>
@@ -79,39 +64,19 @@ const Forum = () => {
             <div>
               <h2>Subject List</h2>
               <hr />
-              {year === 1 && (
                 <li>
-                  {year1.map((subject, index) => (
-                    <option value={house} key={subject + index}>
+                  {subject.map((subject, index) => (
+                    <option value={subject} key={subject + index}>
                       {subject}
                     </option>
                   ))}
                 </li>
-              )}
-              {year === 3 && (
-                <li>
-                  {year3.map((subject, index) => (
-                    <option value={house} key={subject + index}>
-                      {subject}
-                    </option>
-                  ))}
-                </li>
-              )}
-              {year === 6 && (
-                <li>
-                  {year6.map(
-                    (subject, index) => (
-                      <option value={house} key={subject + index}>
-                        {subject}
-                      </option>
-                    )
-                  )}
-                </li>
-              )}
             </div>
+          
+          
           </div>
           <hr />
-            <h1 className="profile">YOU ARE IN GRYFFINDOR</h1>
+            <h1 className="profile">you are in {house}</h1>
             <p style={{paddingLeft:"100px",paddingRight:"100px",paddingBottom:"100px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim id pariatur, molestias dolor, iste tempore dicta eveniet nam asperiores quidem, saepe voluptates cumque accusantium odio atque dolore. Natus ratione eum reprehenderit maiores numquam deleniti dicta dignissimos. Sit animi perspiciatis delectus doloremque voluptate modi, numquam adipisci consectetur rem nemo labore mollitia, ipsa est, iure molestiae asperiores voluptas? Ea temporibus cupiditate earum autem perspiciatis. Necessitatibus modi unde, eum quia qui voluptatibus itaque nihil obcaecati, hic, ad quam alias possimus officiis animi ab assumenda veritatis soluta. Fugit cum atque quod dolorum animi minus accusamus voluptate? Dolorem veritatis nobis officia aliquid quae odit.</p>
         </div>
       ) : (
