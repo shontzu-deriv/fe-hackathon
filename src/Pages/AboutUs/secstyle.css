@@ -1,0 +1,54 @@
+.service__faq {
+  margin: 50px 20px 100px;
+  border: 4px solid #c1af61;
+  padding: 0 40px;
+}
+
+.service__faq__wrapper {
+  text-align: center;
+}
+
+.faq__wrapper__inner {
+  padding-bottom: 20px;
+}
+
+.service__faq__wrapper__circle {
+  color: #c1af61;
+  font-size: 30px;
+  font-family: MinionPro-Bold;
+  background: #f2f1ec;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 50%;
+  line-height: 50px;
+  position: relative;
+  top: -25px;
+}
+
+.service__faq__wrapper__title {
+  font-family: MinionPro-Bold;
+  color: #c1af61;
+  font-size: 36px;
+  margin: 0px 0px 30px 0px;
+  padding: 0 15px;
+  text-align: center;
+  position: relative;
+}
+
+.service__faq__q {
+  font-family: "proxima_nova_ltlight";
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.faq__first-letter {
+  color: #c1af61;
+  font-weight: 600;
+}
+
+.col-md-4 {
+  display: flex;
+}

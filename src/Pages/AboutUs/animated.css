@@ -1,0 +1,25 @@
+.mainstyle {
+  background-image: url(https://images.unsplash.com/photo-1443428018053-13da55589fed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+
+  display: flex;
+  align-items: center;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+.witch {
+  background-image: url(http://pngimg.com/uploads/witch/witch_PNG93.png);
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 500px;
+  animation: move 20s infinite;
+}
