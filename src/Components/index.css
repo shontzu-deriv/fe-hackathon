@@ -60,11 +60,13 @@ body {
   margin: 0.4rem;
   background: darkgray;
   transition: 0.4s ease-in;
+  z-index:1000;
 }
 
 .nav___toggler {
   cursor: pointer;
   display: none;
+  z-index:1000;
 }
 
 footer {
@@ -81,10 +83,11 @@ footer {
 @media screen and (max-width: 768px) {
   .nav___toggler {
     display: block;
+    z-index:1000;
   }
   .nav___menu {
     position: fixed;
-    top: 7vh;
+    top: 0;
     right: 0;
     width: 50%;
     height: 100%;
@@ -92,7 +95,11 @@ footer {
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
-    z-index: 1000;
+    z-index: 999;
+  }
+
+  .containerA {
+    display:block;
   }
 }
 
