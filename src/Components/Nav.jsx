@@ -28,6 +28,11 @@ function Nav() {
             src="https://www.freepnglogos.com/uploads/hogwarts-logo-png/hogwarts-logo-shadopro-deviantart-0.png"
           />
         </Link>
+        <div onClick={navToggle} className={toggleIcon}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
         <ul className={active}>
           <li className="nav___item">
             <Link to="/aboutus" className="nav___link">
@@ -55,12 +60,6 @@ function Nav() {
             </Link>
           </li>
         </ul>
-
-        <div onClick={navToggle} className={toggleIcon}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-        </div>
       </nav>
     </div>
   );
