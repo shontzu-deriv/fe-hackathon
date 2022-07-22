@@ -49,7 +49,7 @@ body {
 .nav___menu {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   /* gap: 20rem; */
 }
 
