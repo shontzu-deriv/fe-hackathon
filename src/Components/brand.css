@@ -62,7 +62,7 @@
   text-align: center;
 }
 
-h1 {
+.layoutposition > h1 {
   position: relative;
   text-transform: uppercase;
   text-shadow: -15px 5px 20px #83eeff;
@@ -74,6 +74,24 @@ h1 {
   font-size: 80px;
   transition: all 0.25s ease-out;
 }
-h1:hover {
+
+.layoutposition > h1:hover {
+  text-shadow: -16px 6px 15px #83eeff;
+}
+
+.containerA > h1 {
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #83eeff;
+  color: white;
+  letter-spacing: -0.05em;
+  font-family: "Anton", Arial, sans-serif;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 80px;
+  transition: all 0.25s ease-out;
+}
+
+.containerA > h1:hover {
   text-shadow: -16px 6px 15px #83eeff;
 }

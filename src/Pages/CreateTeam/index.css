@@ -21,21 +21,20 @@
   cursor: pointer;
 }
 
-.card > img{
+.card > img {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 10px;
   width: 100%;
   height: 100%;
-  object-fit: stretch;
 }
 .card > div {
-  position:absolute;
-  color:white;
-  bottom:0;
-  display:flex;
-  justify-content:space-between;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-container::-webkit-scrollbar {
@@ -73,6 +72,6 @@
   top: -10px;
   transform: rotate(12deg);
   border-radius: 50%;
-  background:goldenrod;
-  border:5px solid darkblue;
+  background: goldenrod;
+  border: 5px solid darkblue;
 }

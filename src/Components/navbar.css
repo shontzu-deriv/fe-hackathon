@@ -20,6 +20,7 @@ li {
 .nav___link {
   text-decoration: none;
   color: darkgray;
+  font-size: larger;
 }
 
 /* Hovering Effect */
@@ -71,6 +72,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: space-evenly;
   /* gap: 20rem; */
+  padding-right: 20px;
 }
 
 .nav___toggler div {
