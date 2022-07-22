@@ -1,7 +1,7 @@
 import React from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, firestore } from "../../firebase-config";
-import { doc, setDoc,getDoc, getFirestore } from "firebase/firestore";
+import { doc, setDoc, getDoc, getFirestore } from "firebase/firestore";
 import "./index.css";
 
 const Register = () => {
@@ -32,8 +32,8 @@ const Register = () => {
     // if(!houseRef.current)throw "FML"
     try {
       //catch the value
-      const house=houseRef.current.value;
-      const year=yearRef.current.value;
+      const house = houseRef.current.value;
+      const year = yearRef.current.value;
       //create the user
       const user = await createUserWithEmailAndPassword(
         auth,
@@ -41,31 +41,30 @@ const Register = () => {
         registerPassword
       );
       //after it done lets create the stuffs
-      if(year==="1"){
-        subjectList=coreClasses;
-      } else if (year==="3") {
-        subjectList=year3;
+      if (year === "1") {
+        subjectList = coreClasses;
+      } else if (year === "3") {
+        subjectList = year3;
       } else {
-        subjectList=year6;
+        subjectList = year6;
       }
       //post the changes
-      setSubjectList(subjectList)
+      setSubjectList(subjectList);
 
-      const docRef=doc(firestore,"Users",user.user.uid);
-        let g=await setDoc(docRef,{
-          userEmail: registerEmail,
-          house:house,
-          year:year,
-          subjectList:subjectList
-        });
-        console.log(subjectList)
-        alert("Welcome " + registerEmail )
+      const docRef = doc(firestore, "Users", user.user.uid);
+      let g = await setDoc(docRef, {
+        userEmail: registerEmail,
+        house: house,
+        year: year,
+        subjectList: subjectList,
+      });
+      console.log(subjectList);
+      alert("Welcome " + registerEmail);
       console.log(user);
     } catch (err) {
       alert(err.message);
     }
   };
-
 
   return (
     <div className="form">
@@ -86,7 +85,7 @@ const Register = () => {
       />
       <div style={{ display: "flex" }}>
         <select name="house" ref={houseRef}>
-          {["gryffindor", "hufflepuff", "ravenclaw", "slytherin"].map(
+          {["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"].map(
             (house, index) => (
               <option value={house} key={house + index}>
                 {house}
@@ -95,7 +94,7 @@ const Register = () => {
           )}
         </select>
         <select name="year" ref={yearRef}>
-          {[1,3,6].map((year, index) => (
+          {[1, 3, 6].map((year, index) => (
             <option value={year} key={year + index}>
               Year {year}
             </option>

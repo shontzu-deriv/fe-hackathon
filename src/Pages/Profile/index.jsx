@@ -31,8 +31,8 @@ const Forum = () => {
       // console.log(user.data().house);
       // console.log(user.data().userEmail);
       setHouse(user.data().house);
-      setSubject(user.data().subjectList)
-      setYear(user.data().year)
+      setSubject(user.data().subjectList);
+      setYear(user.data().year);
       console.log("house: " + house);
       console.log("subjects: " + subject);
       console.log("year: " + year);
@@ -64,20 +64,71 @@ const Forum = () => {
             <div>
               <h2>Subject List</h2>
               <hr />
-                <li>
-                  {subject.map((subject, index) => (
-                    <option value={subject} key={subject + index}>
-                      {subject}
-                    </option>
-                  ))}
-                </li>
+              <li>
+                {subject.map((subject, index) => (
+                  <option value={subject} key={subject + index}>
+                    {subject}
+                  </option>
+                ))}
+              </li>
             </div>
-          
-          
           </div>
           <hr />
-            <h1 className="profile">you are in {house}</h1>
-            <p style={{paddingLeft:"100px",paddingRight:"100px",paddingBottom:"100px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim id pariatur, molestias dolor, iste tempore dicta eveniet nam asperiores quidem, saepe voluptates cumque accusantium odio atque dolore. Natus ratione eum reprehenderit maiores numquam deleniti dicta dignissimos. Sit animi perspiciatis delectus doloremque voluptate modi, numquam adipisci consectetur rem nemo labore mollitia, ipsa est, iure molestiae asperiores voluptas? Ea temporibus cupiditate earum autem perspiciatis. Necessitatibus modi unde, eum quia qui voluptatibus itaque nihil obcaecati, hic, ad quam alias possimus officiis animi ab assumenda veritatis soluta. Fugit cum atque quod dolorum animi minus accusamus voluptate? Dolorem veritatis nobis officia aliquid quae odit.</p>
+          <h1 className="profile">You are in {house}</h1>
+          <p
+            style={{
+              paddingLeft: "100px",
+              paddingRight: "100px",
+              paddingBottom: "100px",
+            }}
+          >
+            {house == "Gryffindor" && (
+              <p>
+                The Gryffindor house emphasised the traits of courage as well as
+                'daring, nerve, and chivalry',and thus its members were
+                generally regarded as brave, though sometimes to the point of
+                recklessness. Some Gryffindors had also been noted to be
+                short-tempered.
+              </p>
+            )}
+            {house == "Slytherin" && (
+              <p>
+                Slytherins tended to be ambitious, shrewd, cunning, strong
+                leaders, and achievement-oriented. They also had highly
+                developed senses of self-preservation.[10] This means that
+                Slytherins tended to hesitate before acting, so as to weigh all
+                possible outcomes before deciding exactly what should be done.
+              </p>
+            )}
+            {house == "Hufflepuff" && (
+              <p>
+                Students belonging to this house were known to be hard-working,
+                friendly, loyal, honest and rather impartial. It might be that
+                due to their values, Hufflepuffs were not as competitive as the
+                other houses, and were more modest about their accomplishments.
+                Hufflepuff was the most inclusive among the four houses; valuing
+                hard work, dedication, patience, loyalty, and fair play rather
+                than a particular aptitude in its students. Hufflepuffs were
+                known to have a strong moral code, and a sense of right and
+                wrong. Hufflepuffs were usually accepting of everyone. Students
+                in Hufflepuff were known to value everyone and treat them as
+                equal.
+              </p>
+            )}
+            {house == "Ravenclaw" && (
+              <p>
+                Ravenclaw House prized learning, wisdom, wit, and intellect in
+                its members. Thus, many Ravenclaws tended to be academically
+                motivated and talented students. They also prided themselves on
+                being original in their ideas, and methods. It was not unusual
+                to find Ravenclaw students practising especially different types
+                of magic that other houses might shun. Hermione Granger, an
+                extremely intelligent witch and the top student in her year, was
+                sorted into Gryffindor, though she admitted that the Sorting Hat
+                had seriously considered placing her in Ravenclaw.
+              </p>
+            )}
+          </p>
         </div>
       ) : (
         <div className="form">

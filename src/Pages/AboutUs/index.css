@@ -61,6 +61,7 @@
 .container .card .box .content {
   padding: 20px;
   text-align: center;
+  height: 35vh;
 }
 
 .container .card .box .content h2 {
@@ -80,7 +81,7 @@
 }
 
 .container .card .box .content p {
-  font-size: 1rem;
+  font-size: 13px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
   z-index: 1;
@@ -137,4 +138,11 @@
 .bodyy > h1:hover span {
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.people {
+  height: 200px;
+  width: 144px;
+  object-fit: cover;
+  border-radius: 10px;
 }

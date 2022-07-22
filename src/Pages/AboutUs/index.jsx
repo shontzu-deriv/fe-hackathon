@@ -45,7 +45,7 @@ const AboutUsIndex = () => {
             <div className="content">
               <h2>03</h2>
               <img className="people" src={izzatyla} alt="izzatyimage" />
-              <h3>Izzaty</h3>
+              <h3>Izzati</h3>
               <p>
                 2 years experience in unethical hacking with the Talibans and
                 participated in hacking the white house system during trump
