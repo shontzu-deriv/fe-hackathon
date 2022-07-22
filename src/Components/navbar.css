@@ -22,6 +22,8 @@ li {
   color: darkgray;
   font-size: larger;
 }
+
+/* Hovering Effect */
 .nav ul li a {
   transition: all 2s;
 }
@@ -49,7 +51,7 @@ nav ul li a:before {
   transition: all 0.5s;
 }
 nav ul li a:hover {
-  color: #555;
+  background-color: #555;
 }
 
 .nav {
@@ -100,7 +102,7 @@ nav ul li a:hover {
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
-    z-index:1000;
+    z-index: 1000;
   }
 }
 
