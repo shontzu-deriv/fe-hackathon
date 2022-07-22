@@ -17,10 +17,12 @@ const Review = () => {
       <div className="column">
         <div className="row">
           <div className="col-md-4 faq__wrapper__inner">
-            <h4 className="service__faq__q">
-              <span className="faq__first-letter">Q:&nbsp;</span>What should we
-              do if we are thinking to uninstall the app?
-            </h4>
+            <p>
+              <h4 className="service__faq__q">
+                <span className="faq__first-letter">Q:&nbsp;</span>What should
+                we do if we are thinking to uninstall the app?
+              </h4>
+            </p>
             <p className="service__faq__a">
               <span className="faq__first-letter">A:&nbsp;</span>If you're
               serious about admiring the greatness of Harry Potter then you
@@ -48,11 +50,7 @@ const Review = () => {
               it take to build my desire team?
             </h4>
             <p className="service__faq__a">
-              <span className="faq__first-letter">
-                <br />
-                <br />
-                A:&nbsp;
-              </span>
+              <span className="faq__first-letter">A:&nbsp;</span>
               It depends on the circumstances. How fast or slow you use this
               app, this app is not slow, who knows it will end up slow one day
               but it functions well so far.
