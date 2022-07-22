@@ -114,7 +114,7 @@
   justify-content: center;
   min-height: 60vh;
 }
-h1 {
+.bodyy > h1 {
   color: #484848;
   font-size: 120px;
   font-weight: bold;
@@ -122,19 +122,19 @@ h1 {
   letter-spacing: 7px;
   cursor: pointer;
 }
-h1 span {
+.bodyy > h1 span {
   transition: 0.5s linear;
 }
-h1:hover span:nth-child(1) {
+.bodyy > h1:hover span:nth-child(1) {
   margin-right: 5px;
 }
-h1:hover span:nth-child(1):after {
+.bodyy > h1:hover span:nth-child(1):after {
   content: "";
 }
-h1:hover span:nth-child(2) {
+.bodyy > h1:hover span:nth-child(2) {
   margin-left: 3px;
 }
-h1:hover span {
+.bodyy > h1:hover span {
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
